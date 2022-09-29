@@ -1,0 +1,9 @@
+{
+  "label": "User Endpoints",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "API endpoints which return information relating to specific user accounts."
+  }
+}
+  
