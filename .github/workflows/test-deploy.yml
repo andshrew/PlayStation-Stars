@@ -11,21 +11,21 @@ jobs:
   deploy:
     name: Test Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
-        working-directory: website
         with:
           node-version: 18
           cache: npm
-          
+          cache-dependency-path: 'website/package-lock.json'
+
       - name: Install dependencies
-        working-directory: website
         run: npm ci
       - name: Update Config BaseUrl
-        working-directory: website
         run: | 
           sed -i "s+baseUrl: '/'+baseUrl: '/PlayStation-Stars/'+g" docusaurus.config.js
       - name: Build website
-        working-directory: website
         run: npm run build
