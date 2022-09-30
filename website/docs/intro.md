@@ -23,7 +23,5 @@ Sony have an API for retrieving details of this service including the progress w
 
 ## Explore the API Endpoints
 
-[User Data](./category/user-endpoints)
-
-
-
+[User Data](./category/user-endpoints)<br/>
+[Service Data](./category/service-endpoints)

@@ -1,0 +1,8 @@
+{
+  "label": "Service Endpoints",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "API endpoints which return information relating to the service (ie. rewards, campaigns)."
+  }
+}

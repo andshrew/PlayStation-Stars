@@ -67,6 +67,21 @@ const config = {
             position: 'left',
             label: 'Home',
           },
+          {
+            type: 'dropdown',
+            label: 'Other APIs',
+            position: 'left',
+            items: [
+              {
+                label: 'PlayStation Trophies',
+                href: 'https://andshrew.github.io/PlayStation-Trophies/#/',
+              },
+              {
+                label: 'PS5 Backwards Compatibility',
+                href: 'https://andshrew.github.io/supreme-enigma/',
+              },
+            ],
+          },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/andshrew/PlayStation-Stars',
