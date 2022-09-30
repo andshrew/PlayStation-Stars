@@ -7,7 +7,7 @@ description: Retrieve available reward tiers
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Campaigns
+# Reward Tiers (Status Levels)
 
 ## Overview
 
