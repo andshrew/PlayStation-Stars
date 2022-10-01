@@ -97,9 +97,9 @@ A JSON response is returned. The following are returned under the `data` attribu
 | images | [JSON object<br/>`Media`](#m-json-object-Media-campaign) | | Media associated with the campaign (images, video)
 | name | String | `PlayStation Store Picks` | Name of the campaign
 | productId | String | `null`<br/>`HP0700-PPSA05164_00-SDGUNBATTLEA0000` | PlayStation Store Product Id associated with the campaign<br/>`null` if not associated with a store product
-| progress | Numeric | `0` | Users progress towards completing the campaign
+| progress | Numeric | `0`<br/>`100` | Users progress towards completing the campaign
 | startDate | Date (UTC) | `2022-09-12T16:00:00.000000Z` | Date the campaign begins
-| status | String | `NOT_REGISTERED`<br/>`AUTO_REGISTERED` | Is the user registered for the campaign
+| status | String | `COMPLETED`<br/>`NOT_REGISTERED`<br/>`AUTO_REGISTERED`<br/>`REGISTERED` | Users status for the campaign
 
 ### Media (Campaign) JSON object {#m-json-object-Media-campaign}
 
