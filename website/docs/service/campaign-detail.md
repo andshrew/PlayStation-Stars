@@ -114,7 +114,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | assets | [JSON object<br/>`Media`](#m-json-object-Media-collectible) | | Media associated with the collectible (images, video)
 | id | String | `4a9d9d67-e29f-598c-bb57-b6689456aa8c` | GUID for the collectible
 | name | String | `Novelty Toy Fight Trophy` | Name of the collectible
-| rarityType | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`LEGENDARY` | Rarity of the collectible
+| rarityType | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`HEROIC`<br/>`LEGENDARY` | Rarity of the collectible
 
 ### Media (Collectible) JSON object {#m-json-object-Media-collectible}
 
@@ -255,24 +255,24 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
 ### Example 2 - Retrieve points reward campaign with id `162f269d-1ed9-5647-a015-30cf1b76a766` for the authenticating account
 
 <Tabs>
-<TabItem value="example1-encoded-url" label="Encoded URL">
+<TabItem value="example2-encoded-url" label="Encoded URL">
 
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables=%7B%22campaignId%22%3A%22162f269d-1ed9-5647-a015-30cf1b76a766%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320%22%7D%7D
 
 </TabItem>
 
-<TabItem value="example1-raw-url" label="Raw URL">
+<TabItem value="example2-raw-url" label="Raw URL">
 
-    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"162f269d-1ed9-5647-a015-30cf1b76a766"}&extensions={"persistedQuery":{"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"162f269d-1ed9-5647-a015-30cf1b76a766"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}
 
 </TabItem>
 
-<TabItem value="example1-raw-pwsh" label="PowerShell">
+<TabItem value="example2-raw-pwsh" label="PowerShell">
 
 _See [using PowerShell to query the API](../query-api)_
 
 ```powershell
-Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"162f269d-1ed9-5647-a015-30cf1b76a766"}&extensions={"persistedQuery":{"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}' -Authentication Bearer -Token $token
+Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"162f269d-1ed9-5647-a015-30cf1b76a766"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}' -Authentication Bearer -Token $token
 ```
 
 </TabItem>

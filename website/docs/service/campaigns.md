@@ -119,7 +119,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | assets | [JSON object<br/>`Media`](#m-json-object-Media-collectible) | | Media associated with the collectible (images, video)
 | id | String | `4a9d9d67-e29f-598c-bb57-b6689456aa8c` | GUID for the collectible
 | name | String | `Novelty Toy Fight Trophy` | Name of the collectible
-| rarityType | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`LEGENDARY` | Rarity of the collectible
+| rarityType | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`HEROIC`<br/>`LEGENDARY` | Rarity of the collectible
 
 ### Media (Collectible) JSON object {#m-json-object-Media-collectible}
 
