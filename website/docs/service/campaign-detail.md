@@ -93,7 +93,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | productId | String | `null`<br/>`HP0700-PPSA05164_00-SDGUNBATTLEA0000` | PlayStation Store Product Id associated with the campaign<br/>`null` if not associated with a store product
 | progress | Numeric | `0` | Users progress towards completing the campaign
 | startDate | Date (UTC) | `2022-09-12T16:00:00.000000Z` | Date the campaign begins
-| status | String | `NOT_REGISTERED`<br/>`AUTO_REGISTERED` | Is the user registered for the campaign
+| status | String | `NOT_REGISTERED`<br/>`AUTO_REGISTERED`<br/>`REGISTERED` | Users status for the campaign
 | tasks | String | [JSON object<br/>`LoyaltyCampaignTask`](#m-json-object-LoyaltyCampaignTask) | Collections of tasks to complete the campaign
 
 ### Media (Campaign) JSON object {#m-json-object-Media-campaign}
@@ -135,9 +135,9 @@ A JSON response is returned. The following are returned under the `data` attribu
 | id | String | `e4da3be6-c521-5130-b976-4034dea9a212` | GUID for the task
 | isLocked | Boolean | `false` | True if the task has been completed
 | name | String | `null` | Name of the task<br/>Current ones all appear as `null`
-| productId | String | `null` | PlayStation Store Product Id associated with the campaign<br/>`null` if not associated with a store product
-| progress | Numeric | `0`<br/>`null` | Users progress towards completing the campaign<br/>May be `null` if not registered for the campaign
-| status | String | `NOT_REGISTERED`<br/>`AUTO_REGISTERED` | Is the user registered for the campaign
+| productId | String | `null` | PlayStation Store Product Id associated with the task<br/>`null` if not associated with a store product
+| progress | Numeric | `0`<br/>`null` | Users progress towards completing the task<br/>May be `null` if not registered for the campaign
+| status | String | `COMPLETED`<br/>`NOT_REGISTERED`<br/>`AUTO_REGISTERED`<br/>`NOT_STARTED` | Users status for the task
 
 
 ## Examples with Responses
@@ -368,6 +368,116 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
           "productId": null,
           "progress": null,
           "status": "NOT_REGISTERED"
+        }
+      ]
+    }
+  }
+}
+```
+
+</details>
+
+### Example 3 - Retrieve a completed campaign for the authenticating account
+
+<Tabs>
+<TabItem value="example3-encoded-url" label="Encoded URL">
+
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables=%7B%22campaignId%22%3A%2223fc3a5d-34bf-509c-b381-7b40bd8611f3%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320%22%7D%7D
+
+</TabItem>
+
+<TabItem value="example3-raw-url" label="Raw URL">
+
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"23fc3a5d-34bf-509c-b381-7b40bd8611f3"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}
+
+</TabItem>
+
+<TabItem value="example3-raw-pwsh" label="PowerShell">
+
+_See [using PowerShell to query the API](../query-api)_
+
+```powershell
+Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"23fc3a5d-34bf-509c-b381-7b40bd8611f3"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}' -Authentication Bearer -Token $token
+```
+
+</TabItem>
+
+</Tabs>
+
+<details><summary>Click to view full JSON response</summary>
+
+```json
+{
+  "data": {
+    "loyaltyCampaignByIdRetrieve": {
+      "__typename": "LoyaltyCampaign",
+      "campaignRewardType": "COLLECTIBLE",
+      "collectible": {
+        "__typename": "LoyaltyCampaignCollectible",
+        "assets": [
+          {
+            "__typename": "Media",
+            "altText": null,
+            "role": "IMAGE",
+            "type": "IMAGE",
+            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_428_1663345652984.png"
+          },
+          {
+            "__typename": "Media",
+            "altText": null,
+            "role": "VIDEO",
+            "type": "VIDEO",
+            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_428_1663345660772.mp4"
+          }
+        ],
+        "id": "88d25cfa-26ad-572a-9335-a32b9bcabe13",
+        "name": "PlayStation Tech Demo Tyrannosaurus Rex ",
+        "rarityType": "UNCOMMON"
+      },
+      "description": "Happy October! Always good to see you.",
+      "displayPoints": "",
+      "endDate": "2022-10-31T15:59:00.000000Z",
+      "estimatedTime": null,
+      "id": "23fc3a5d-34bf-509c-b381-7b40bd8611f3",
+      "images": [
+        {
+          "__typename": "Media",
+          "altText": null,
+          "role": "IMAGE",
+          "type": "IMAGE",
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_1372_1663708610342.png"
+        },
+        {
+          "__typename": "Media",
+          "altText": null,
+          "role": "TILE",
+          "type": "IMAGE",
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_428_1663345652984.png"
+        },
+        {
+          "__typename": "Media",
+          "altText": null,
+          "role": "TILE",
+          "type": "IMAGE",
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_428_1663345660772.mp4"
+        }
+      ],
+      "isRegistrationRequired": false,
+      "name": "October Check-in",
+      "productId": null,
+      "progress": 100,
+      "startDate": "2022-09-30T16:00:00.000000Z",
+      "status": "COMPLETED",
+      "tasks": [
+        {
+          "__typename": "LoyaltyCampaignTask",
+          "description": "Play any game (PS4/PS5).",
+          "id": "e4da3be6-c521-5130-b976-4034dea9a212",
+          "isLocked": false,
+          "name": null,
+          "productId": null,
+          "progress": 100,
+          "status": "COMPLETED"
         }
       ]
     }
