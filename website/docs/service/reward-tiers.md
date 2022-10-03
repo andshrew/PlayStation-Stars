@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: Reward Tiers (Status Levels)
 description: Retrieve available reward tiers
 ---
@@ -15,7 +15,7 @@ Requests to this endpoint will retrieve the reward tiers that exist within the s
 
 Reward tiers are otherwise known as Status Levels or PlayStation Stars Level. A user can upgrade their level by both purchasing "full games" from the PlayStation Store and earning rare (silver) and better trophies. These must be done after enrolling in the service.
 
-There are 4 earnable tiers in the service. There is an additional (currently undisclosed) 5th tier in the service known as Diamond which the API suggests is by invite only.
+There are 4 earnable tiers in the service. There is an additional (and currently undisclosed) 5th tier in the service known as Diamond which the API suggests is accessible by invite only.
 
 The endpoint can query the authenticating account only.
 

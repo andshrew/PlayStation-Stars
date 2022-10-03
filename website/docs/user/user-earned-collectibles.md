@@ -126,6 +126,24 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
         "id": "4aaf72d0-ceeb-57ab-ad13-09e4ee36ae2e",
         "name": "Star Gazer Telescope",
         "rarity": "COMMON"
+      },
+      {
+        "__typename": "LoyaltyUserCollectible",
+        "assets": [
+          {
+            "__typename": "Media",
+            "type": "IMAGE",
+            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_428_1663345652984.png"
+          },
+          {
+            "__typename": "Media",
+            "type": "VIDEO",
+            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_428_1663345660772.mp4"
+          }
+        ],
+        "id": "88d25cfa-26ad-572a-9335-a32b9bcabe13",
+        "name": "PlayStation Tech Demo Tyrannosaurus Rex ",
+        "rarity": "UNCOMMON"
       }
     ]
   }

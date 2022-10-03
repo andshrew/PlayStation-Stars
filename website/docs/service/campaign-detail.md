@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1.5
 title: Campaign Detail
 description: Retrieve detail of a specific campaign
 ---
