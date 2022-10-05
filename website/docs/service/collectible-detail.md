@@ -19,7 +19,7 @@ The endpoint can query the authenticating account, or it can query another user 
 
 :::info
 
-If you query an account which has either not enrolled with PlayStation Stars or has not given the authenticating account permission to view their PlayStation Stars Level or Display Case then the API will return a successful response with an error object contained within.
+This endpoint always returns a response for the authenticating account regardless of whether or not it has enrolled with PlayStation Stars service.  If you query an account which has either not enrolled with PlayStation Stars or has not given the authenticating account permission to view their PlayStation Stars Level or Display Case then the API will return a successful response with an error object contained within.
 
 <details><summary>Click to view full response</summary>
 
