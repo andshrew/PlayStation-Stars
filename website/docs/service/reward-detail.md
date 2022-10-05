@@ -160,11 +160,15 @@ Wallet credit rewards appear to be listed as generic dollar values (ie. $5, $20)
 <Tabs>
 <TabItem value="example1-encoded-url" label="Encoded URL">
 
+_See [using a Web Browser to query the API](../query-api#web-browser)_
+
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyRewardbyId&variables=%7B%22id%22%3A%2285bc1d70-a9ee-55e7-a97d-905ee2d82a48%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22ce95956c322a6a6a83def21efd4471cf1f617a2259c1e9c52b4a2c2109005cdd%22%7D%7D
 
 </TabItem>
 
 <TabItem value="example1-raw-url" label="Raw URL">
+
+_See [using a Web Browser to query the API](../query-api#web-browser)_
 
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyRewardbyId&variables={"id":"85bc1d70-a9ee-55e7-a97d-905ee2d82a48"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"ce95956c322a6a6a83def21efd4471cf1f617a2259c1e9c52b4a2c2109005cdd"}}
 
@@ -172,7 +176,7 @@ Wallet credit rewards appear to be listed as generic dollar values (ie. $5, $20)
 
 <TabItem value="example1-raw-pwsh" label="PowerShell">
 
-_See [using PowerShell to query the API](../query-api)_
+_See [using PowerShell to query the API](../query-api#powershell-7)_
 
 ```powershell
 Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyRewardbyId&variables={"id":"85bc1d70-a9ee-55e7-a97d-905ee2d82a48"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"ce95956c322a6a6a83def21efd4471cf1f617a2259c1e9c52b4a2c2109005cdd"}}' -Authentication Bearer -Token $token
@@ -236,11 +240,15 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
 <Tabs>
 <TabItem value="example2-encoded-url" label="Encoded URL">
 
+_See [using a Web Browser to query the API](../query-api#web-browser)_
+
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyRewardbyId&variables=%7B%22id%22%3A%2218747538-8dce-569c-91b8-3d46bc1c7296%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22ce95956c322a6a6a83def21efd4471cf1f617a2259c1e9c52b4a2c2109005cdd%22%7D%7D
 
 </TabItem>
 
 <TabItem value="example2-raw-url" label="Raw URL">
+
+_See [using a Web Browser to query the API](../query-api#web-browser)_
 
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyRewardbyId&variables={"id":"18747538-8dce-569c-91b8-3d46bc1c7296"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"ce95956c322a6a6a83def21efd4471cf1f617a2259c1e9c52b4a2c2109005cdd"}}
 
@@ -248,7 +256,7 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
 
 <TabItem value="example2-raw-pwsh" label="PowerShell">
 
-_See [using PowerShell to query the API](../query-api)_
+_See [using PowerShell to query the API](../query-api#powershell-7)_
 
 ```powershell
 Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyRewardbyId&variables={"id":"18747538-8dce-569c-91b8-3d46bc1c7296"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"ce95956c322a6a6a83def21efd4471cf1f617a2259c1e9c52b4a2c2109005cdd"}}' -Authentication Bearer -Token $token

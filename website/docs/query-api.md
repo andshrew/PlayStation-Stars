@@ -5,6 +5,18 @@ description: Examples for querying the API
 
 # Querying the API
 
+## Web Browser
+
+PlayStation web services store their authentication token within a cookie in the browser, so once you have authenticated to one of the services such as the PlayStation Store you can then access any of the endpoint URLs documented here and your browser will automatically use the stored auth token. The API responds with a JSON object, so for a more friendly view you can use a web browser such as FireFox which includes a JSON parser.
+
+1. In your web browser access https://store.playstation.com and log in with a PSN account.
+
+2. In the same browser access one of the URLs documented here, for example: [view a specific collectible](https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyUserCollectibleById&variables={%22collectibleId%22:%2288d25cfa-26ad-572a-9335-a32b9bcabe13%22,%22accountId%22:%22me%22}&extensions={%22persistedQuery%22:{%22version%22:1,%22sha256Hash%22:%2286ecd802c228fbae4b7482d7272932ad18f56516dbf28ede9fdbe1554b796549%22}})
+
+3. The JSON response will be displayed in the browser.
+![browser example](img/2022-10-05-18-54-54.png)
+_Example with FireFox which automatically parses the JSON response_
+
 ## Powershell 7
 
 Powershell includes the [`Invoke-RestMethod`](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-7.1) cmdlet which enables you to to make a request to a URL and process the response - in this case JSON - into a Powershell object.

@@ -139,11 +139,15 @@ A JSON response is returned. The following are returned under the `data` attribu
 <Tabs>
 <TabItem value="example1-encoded-url" label="Encoded URL">
 
+_See [using a Web Browser to query the API](../query-api#web-browser)_
+
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetCampaignGroup&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22eabc9a2d92e6c8604eb611c22bbc0f8ffce673dee29b0c1f82040f5a4918264b%22%7D%7D
 
 </TabItem>
 
 <TabItem value="example1-raw-url" label="Raw URL">
+
+_See [using a Web Browser to query the API](../query-api#web-browser)_
 
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetCampaignGroup&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"eabc9a2d92e6c8604eb611c22bbc0f8ffce673dee29b0c1f82040f5a4918264b"}}
 
@@ -151,7 +155,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 
 <TabItem value="example1-raw-pwsh" label="PowerShell">
 
-_See [using PowerShell to query the API](../query-api)_
+_See [using PowerShell to query the API](../query-api#powershell-7)_
 
 ```powershell
 Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetCampaignGroup&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"eabc9a2d92e6c8604eb611c22bbc0f8ffce673dee29b0c1f82040f5a4918264b"}}' -Authentication Bearer -Token $token

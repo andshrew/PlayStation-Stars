@@ -81,11 +81,15 @@ A JSON response is returned. The following are returned under the `data` attribu
 <Tabs>
 <TabItem value="example1-encoded-url" label="Encoded URL">
 
+_See [using a Web Browser to query the API](../query-api#web-browser)_
+
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetUserCollectibles&variables=%7B%22includeDisplayItems%22%3Atrue%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2235e365310aa44393f6cdc5d6b53127e137a9a87749692ca3c4c3c49dca92c4ba%22%7D%7D
 
 </TabItem>
 
 <TabItem value="example1-raw-url" label="Raw URL">
+
+_See [using a Web Browser to query the API](../query-api#web-browser)_
 
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetUserCollectibles&variables={"includeDisplayItems":true}&extensions={"persistedQuery":{"version":1,"sha256Hash":"35e365310aa44393f6cdc5d6b53127e137a9a87749692ca3c4c3c49dca92c4ba"}}
 
@@ -93,7 +97,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 
 <TabItem value="example1-raw-pwsh" label="PowerShell">
 
-_See [using PowerShell to query the API](../query-api)_
+_See [using PowerShell to query the API](../query-api#powershell-7)_
 
 ```powershell
 Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetUserCollectibles&variables={"includeDisplayItems":true}&extensions={"persistedQuery":{"version":1,"sha256Hash":"35e365310aa44393f6cdc5d6b53127e137a9a87749692ca3c4c3c49dca92c4ba"}}' -Authentication Bearer -Token $token
@@ -157,11 +161,15 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
 <Tabs>
 <TabItem value="example2-encoded-url" label="Encoded URL">
 
+_See [using a Web Browser to query the API](../query-api#web-browser)_
+
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetUserCollectibles&variables=%7B%22includeDisplayItems%22%3Afalse%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2235e365310aa44393f6cdc5d6b53127e137a9a87749692ca3c4c3c49dca92c4ba%22%7D%7D
 
 </TabItem>
 
 <TabItem value="example2-raw-url" label="Raw URL">
+
+_See [using a Web Browser to query the API](../query-api#web-browser)_
 
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetUserCollectibles&variables={"includeDisplayItems":false}&extensions={"persistedQuery":{"version":1,"sha256Hash":"35e365310aa44393f6cdc5d6b53127e137a9a87749692ca3c4c3c49dca92c4ba"}}
 
@@ -169,7 +177,7 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
 
 <TabItem value="example2-raw-pwsh" label="PowerShell">
 
-_See [using PowerShell to query the API](../query-api)_
+_See [using PowerShell to query the API](../query-api#powershell-7)_
 
 ```powershell
 Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetUserCollectibles&variables={"includeDisplayItems":false}&extensions={"persistedQuery":{"version":1,"sha256Hash":"35e365310aa44393f6cdc5d6b53127e137a9a87749692ca3c4c3c49dca92c4ba"}}' -Authentication Bearer -Token $token
