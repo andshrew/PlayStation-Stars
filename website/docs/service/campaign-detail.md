@@ -93,7 +93,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | productId | String | `null`<br/>`HP0700-PPSA05164_00-SDGUNBATTLEA0000` | PlayStation Store Product Id associated with the campaign<br/>`null` if not associated with a store product
 | progress | Numeric | `0` | Users progress towards completing the campaign
 | startDate | Date (UTC) | `2022-09-12T16:00:00.000000Z` | Date the campaign begins
-| status | String | `NOT_REGISTERED`<br/>`AUTO_REGISTERED`<br/>`REGISTERED` | Users status for the campaign
+| status | String | `NOT_REGISTERED`<br/>`AUTO_REGISTERED`<br/>`REGISTERED`<br/>`IN_PROGRESS` | Users status for the campaign
 | tasks | String | [JSON object<br/>`LoyaltyCampaignTask`](#m-json-object-LoyaltyCampaignTask) | Collections of tasks to complete the campaign
 
 ### Media (Campaign) JSON object {#m-json-object-Media-campaign}
@@ -485,6 +485,170 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
           "__typename": "LoyaltyCampaignTask",
           "description": "Play any game (PS4/PS5).",
           "id": "e4da3be6-c521-5130-b976-4034dea9a212",
+          "isLocked": false,
+          "name": null,
+          "productId": null,
+          "progress": 100,
+          "status": "COMPLETED"
+        }
+      ]
+    }
+  }
+}
+```
+
+</details>
+
+### Example 4 - Retrieve an in-progress campaign for the authenticating account
+
+<Tabs>
+<TabItem value="example4-encoded-url" label="Encoded URL">
+
+_See [using a Web Browser to query the API](../query-api#web-browser)_
+
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables=%7B%22campaignId%22%3A%220191e016-79a8-5cc5-bae6-70c74f441be3%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320%22%7D%7D
+
+</TabItem>
+
+<TabItem value="example4-raw-url" label="Raw URL">
+
+_See [using a Web Browser to query the API](../query-api#web-browser)_
+
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"0191e016-79a8-5cc5-bae6-70c74f441be3"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}
+
+</TabItem>
+
+<TabItem value="example4-raw-pwsh" label="PowerShell">
+
+_See [using PowerShell to query the API](../query-api#powershell-7)_
+
+```powershell
+Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"0191e016-79a8-5cc5-bae6-70c74f441be3"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}' -Authentication Bearer -Token $token
+```
+
+</TabItem>
+
+</Tabs>
+
+<details><summary>Click to view full JSON response</summary>
+
+```json
+{
+  "data": {
+    "loyaltyCampaignByIdRetrieve": {
+      "__typename": "LoyaltyCampaign",
+      "campaignRewardType": "COLLECTIBLE",
+      "collectible": {
+        "__typename": "LoyaltyCampaignCollectible",
+        "assets": [
+          {
+            "__typename": "Media",
+            "altText": null,
+            "role": "IMAGE",
+            "type": "IMAGE",
+            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_405_1665525133249.png"
+          },
+          {
+            "__typename": "Media",
+            "altText": null,
+            "role": "VIDEO",
+            "type": "VIDEO",
+            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_405_1662004216217.mp4"
+          }
+        ],
+        "id": "59abc4e2-f96a-5b9e-a93d-c3c3bcdb4c19",
+        "name": "Sony Chord Machine",
+        "rarityType": "HEROIC"
+      },
+      "description": "Launch the game that matches a popular hit from circa 1994",
+      "displayPoints": "",
+      "endDate": "2022-11-15T22:59:00Z",
+      "estimatedTime": null,
+      "id": "0191e016-79a8-5cc5-bae6-70c74f441be3",
+      "images": [
+        {
+          "__typename": "Media",
+          "altText": null,
+          "role": "IMAGE",
+          "type": "IMAGE",
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_1521_1663012650519.jpg"
+        },
+        {
+          "__typename": "Media",
+          "altText": null,
+          "role": "TILE",
+          "type": "IMAGE",
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_405_1665525133249.png"
+        },
+        {
+          "__typename": "Media",
+          "altText": null,
+          "role": "TILE",
+          "type": "IMAGE",
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_405_1662004216217.mp4"
+        }
+      ],
+      "isRegistrationRequired": false,
+      "name": "Press play: 1994",
+      "productId": null,
+      "progress": 83,
+      "startDate": "2022-10-04T23:00:00Z",
+      "status": "IN_PROGRESS",
+      "tasks": [
+        {
+          "__typename": "LoyaltyCampaignTask",
+          "description": "Stay x Circle of Life",
+          "id": "6e122317-2d63-524e-9964-a0391d3aa106",
+          "isLocked": false,
+          "name": null,
+          "productId": null,
+          "progress": 0,
+          "status": "NOT_STARTED"
+        },
+        {
+          "__typename": "LoyaltyCampaignTask",
+          "description": "Baby I Love Your Way x Go West",
+          "id": "05bbfa40-06ba-5d22-beef-1cf5c282adcb",
+          "isLocked": false,
+          "name": null,
+          "productId": null,
+          "progress": 100,
+          "status": "COMPLETED"
+        },
+        {
+          "__typename": "LoyaltyCampaignTask",
+          "description": "Mr. Jones x Regulate",
+          "id": "fce8790c-f5c1-56cd-9b1e-fcfb4ce8fc4e",
+          "isLocked": false,
+          "name": null,
+          "productId": null,
+          "progress": 100,
+          "status": "COMPLETED"
+        },
+        {
+          "__typename": "LoyaltyCampaignTask",
+          "description": "More Human Than Human",
+          "id": "6a8cb238-1e54-5991-9029-e7820aa9110b",
+          "isLocked": false,
+          "name": null,
+          "productId": null,
+          "progress": 100,
+          "status": "COMPLETED"
+        },
+        {
+          "__typename": "LoyaltyCampaignTask",
+          "description": "Wild Night",
+          "id": "32c7cd9b-b0bd-55d7-89aa-a3e82dcb9d8d",
+          "isLocked": false,
+          "name": null,
+          "productId": null,
+          "progress": 100,
+          "status": "COMPLETED"
+        },
+        {
+          "__typename": "LoyaltyCampaignTask",
+          "description": "Streets of Philadelphia",
+          "id": "c0c68178-5866-58d3-bc09-07fd92528823",
           "isLocked": false,
           "name": null,
           "productId": null,
