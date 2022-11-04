@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: User Display Case
 description: Retrieve a users collectibles display case
 ---
