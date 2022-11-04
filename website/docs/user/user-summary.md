@@ -59,7 +59,7 @@ If you query an account (other than the authenticating account) which has either
 | --- | --- |
 | operationName | metGetAccount |
 | variables | `{"accountId":"me"}` |
-| extensions | `{"persistedQuery":{"version":1,"sha256Hash":"743c32289cdd6fbdead3b34ea80b48d63f8ddab34581469c4dda4ea412e6cf6b"}` |
+| extensions | `{"persistedQuery":{"version":1,"sha256Hash":"743c32289cdd6fbdead3b34ea80b48d63f8ddab34581469c4dda4ea412e6cf6b"}}` |
 
 | Property | Parent Parameter | Type | Example Values | Description | Required |
 | --- | --- | --- | --- | --- | --- |
