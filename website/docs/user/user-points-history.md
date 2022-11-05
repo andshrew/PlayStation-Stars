@@ -58,7 +58,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | __typename | String | `LoyaltyPointHistoryRecord` |
 | displayPoints | String | `700`<br/>`-1,250` | Points earned or redeemed (string formatted)
 | eventDateTime | Date (UTC) | `2022-11-02T20:21:28.891Z` | Date of the transaction
-| eventType | String | `PURCHASE`<br/>`CAMPAIGN`<br/>`WALLET_CREDIT` | Type of transaction
+| eventType | String | `PURCHASE`<br/>`WALLET_CREDIT`<br/>`CAMPAIGN`<br/>`COLLECTIBLE` | Type of transaction
 | points | Numeric | `700`<br/>`-1250` | Points earned or redeemed
 | referenceData | [JSON object<br/>`LoyaltyRewardRecord`](#m-json-object-LoyaltyRewardRecord)<br/>[JSON object<br/>`LoyaltyPurchaseRecord`](#m-json-object-LoyaltyPurchaseRecord) | | Data associated with how the points were earned or redeemed
 
@@ -67,8 +67,8 @@ A JSON response is returned. The following are returned under the `data` attribu
 | Attribute | Type | Example Response | Description |
 | --- | --- |--- | --- |
 | __typename | String | `LoyaltyRewardRecord` |
-| id | String | `8fc3abdc-bf5b-5f7f-8a44-a9c2c50837b7` | GUID of the campaign associated with the points
-| name | String | `Play Wherever` | Name of the campaign
+| id | String | `8fc3abdc-bf5b-5f7f-8a44-a9c2c50837b7`<br/>`7a258750-c495-5a79-a94d-5e450f4bc2bc` | GUID of the reward associated with the points (usually a campaign or collectible)
+| name | String | `Play Wherever`<br/><code>Hans &#124; tortured artist capsule</code> | Name of the reward
 
 ### LoyaltyPurchaseRecord JSON object {#m-json-object-LoyaltyPurchaseRecord}
 
@@ -81,7 +81,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 
 ## Examples with Responses
 
-### Example 1 - Retrieve points history for the authenticating account
+### Example 1 - Retrieve points history for the authenticating account (Purchase, Campaign and Wallet Credit)
 
 <Tabs>
 <TabItem value="example1-encoded-url" label="Encoded URL">
@@ -164,6 +164,74 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
           "__typename": "LoyaltyPurchaseRecord",
           "id": "000000000000",
           "name": null
+        }
+      }
+    ]
+  }
+}
+```
+
+</details>
+
+### Example 2 - Retrieve points history for the authenticating account (Purchase and Collectible)
+
+<Tabs>
+<TabItem value="example2-encoded-url" label="Encoded URL">
+
+_See [using a Web Browser to query the API](../query-api#web-browser)_
+
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetPointsHistory&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22302481c4156ec3f64332bf4b76251597eb30825a79e2736641737bc3af77755c%22%7D%7D
+
+</TabItem>
+
+<TabItem value="example2-raw-url" label="Raw URL">
+
+_See [using a Web Browser to query the API](../query-api#web-browser)_
+
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetPointsHistory&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"302481c4156ec3f64332bf4b76251597eb30825a79e2736641737bc3af77755c"}}
+
+</TabItem>
+
+<TabItem value="example2-raw-pwsh" label="PowerShell">
+
+_See [using PowerShell to query the API](../query-api#powershell-7)_
+
+```powershell
+Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetPointsHistory&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"302481c4156ec3f64332bf4b76251597eb30825a79e2736641737bc3af77755c"}}' -Authentication Bearer -Token $token
+```
+
+</TabItem>
+
+</Tabs>
+
+<details><summary>Click to view full JSON response</summary>
+
+```json
+{
+  "data": {
+    "loyaltyPointHistoryRetrieve": [
+      {
+        "__typename": "LoyaltyPointHistoryRecord",
+        "displayPoints": "450",
+        "eventDateTime": "2022-10-13T12:37:08.54Z",
+        "eventType": "PURCHASE",
+        "points": 450,
+        "referenceData": {
+          "__typename": "LoyaltyPurchaseRecord",
+          "id": "000000000000",
+          "name": "3,280 Genesis Crystals"
+        }
+      },
+      {
+        "__typename": "LoyaltyPointHistoryRecord",
+        "displayPoints": "-200",
+        "eventDateTime": "2022-10-29T21:41:32.252532Z",
+        "eventType": "COLLECTIBLE",
+        "points": -200,
+        "referenceData": {
+          "__typename": "LoyaltyRewardRecord",
+          "id": "7a258750-c495-5a79-a94d-5e450f4bc2bc",
+          "name": "Hans | tortured artist capsule"
         }
       }
     ]
