@@ -57,8 +57,8 @@ const config = {
         title: 'PlayStation Stars API',
         //style: 'dark' ,
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'PlayStation Stars Logo',
+          src: 'img/docusaurus.png',
         },
         items: [
           {
