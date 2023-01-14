@@ -133,7 +133,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | __typename | String | `LoyaltyCampaignTask` |
 | description | String | `Play any game (PS4/PS5).` | Description of the task
 | id | String | `e4da3be6-c521-5130-b976-4034dea9a212` | GUID for the task
-| isLocked | Boolean | `false` | True if the task has been completed
+| isLocked | Boolean | `false` | Unknown (no examples of `true`)
 | name | String | `null` | Name of the task<br/>Current ones all appear as `null`
 | productId | String | `null` | PlayStation Store Product Id associated with the task<br/>`null` if not associated with a store product
 | progress | Numeric | `0`<br/>`null` | Users progress towards completing the task<br/>May be `null` if not registered for the campaign

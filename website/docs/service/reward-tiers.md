@@ -13,9 +13,18 @@ import TabItem from '@theme/TabItem';
 
 Requests to this endpoint will retrieve the reward tiers that exist within the service.
 
-Reward tiers are otherwise known as Status Levels or PlayStation Stars Level. A user can upgrade their level by both purchasing "full games" from the PlayStation Store and earning rare (silver) and better trophies. These must be done after enrolling in the service.
+Reward tiers are otherwise known as Status Levels or PlayStation Stars Level. Once a user has enrolled in the service they can upgrade their level by purchasing "full games" from the PlayStation Store and by earning trophies which have a rarity status of rare, very rare, or ultra rate as at the time of unlocking (ie. a trophy which has been earned by 50% or fewer people).
 
-There are 4 earnable tiers in the service. There is an additional (and currently undisclosed) 5th tier in the service known as Diamond which the API suggests is accessible by invite only.
+There are 4 Status Levels which can be earned, and the total purchases and trophies required to earn them are cumulative.
+
+| Status Level | "Full Game" PS Store Purchases Required | Rare (and above) Trophies Required
+| --- | --- | --- |
+| 1 | - | - |
+| 2 | 1 | 1 |
+| 3 | 2 | 32 |
+| 4 | 4 | 128 |
+
+There is an additional (and currently undisclosed) 5th tier in the service known as Diamond which the API suggests is accessible by invite only. Some detail of this can be seen in the example API response below, [additional information can be found in this Reddit post](https://redd.it/zcondt).
 
 The endpoint can query the authenticating account only.
 
