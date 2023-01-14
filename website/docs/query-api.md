@@ -53,51 +53,28 @@ function Get-AuthenticationToken {
     return
   }
 
-  $params = @(
-    "access_type=offline",
-    "client_id=09515159-7237-4370-9b40-3806e67c0891",
-    "response_type=code",
-    "scope=psn:mobile.v2.core psn:clientapp",
-    "redirect_uri=com.scee.psxandroid.scecompcall://redirect"
-  )
-  $url = "https://ca.account.sony.com/api/authz/v3/oauth/authorize?$($params -join "&")"
-
-  try {
-    $result = Invoke-WebRequest -Uri $url -Headers @{
-      "Cookie"="npsso=$npsso"
-    }
-    Write-Host "Error: Check npsso"
-    return
-  }
-  catch {
-    if ($_.Exception.Response.Headers.Location.Query -like "?code=v3*") {
-      $query = [System.Web.HttpUtility]::ParseQueryString($_.Exception.Response.Headers.Location.Query)
-    }
-    else {  Write-Host "Error: Check npsso"; return }
-  }
-
   $body = @{
-    code=$query['code']
-    redirect_uri="com.scee.psxandroid.scecompcall://redirect"
-    grant_type="authorization_code"
     token_format="jwt"
+    grant_type="sso_token"
+    npsso=$npsso
+    scope="psn:mobile.v2.core psn:clientapp"
   }
 
   $contentType = "application/x-www-form-urlencoded"
   $url = "https://ca.account.sony.com/api/authz/v3/oauth/token"
 
   try {
-    $result = Invoke-WebRequest -Method POST -Uri $url -body $body -ContentType $ContentType -Headers @{
+    $result = Invoke-RestMethod -Uri $url -Method Post -Body $body -ContentType $contentType -Headers @{
       "Authorization"="Basic MDk1MTUxNTktNzIzNy00MzcwLTliNDAtMzgwNmU2N2MwODkxOnVjUGprYTV0bnRCMktxc1A="
     }
-    $token = ConvertTo-SecureString ($result.Content | ConvertFrom-Json).access_token -AsPlainText
+    $token = ConvertTo-SecureString $result.access_token -AsPlainText
     if ($token) {
       Write-Host "Authentication Token successfully granted"
       return $token
     }
     else { Write-Host "Error: Unable to obtain Authentication Token" }
   }
-  catch { Write-Host "Error: Unable to obtain Authentication Token" }
+  catch { Write-Host "Error: Unable to obtain Authentication Token (check npsso)" }
 }
 ```
 
