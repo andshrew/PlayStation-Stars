@@ -13,7 +13,7 @@ import TabItem from '@theme/TabItem';
 
 Requests to this endpoint will retrieve the reward tiers that exist within the service.
 
-Reward tiers are otherwise known as Status Levels or PlayStation Stars Level. Once a user has enrolled in the service they can upgrade their level by purchasing "full games" from the PlayStation Store and by earning trophies which have a rarity status of rare, very rare, or ultra rate as at the time of unlocking (ie. a trophy which has been earned by 50% or fewer people).
+Reward tiers are otherwise known as Status Levels or PlayStation Stars Level. Once a user has enrolled in the service they can upgrade their level by purchasing "full games" from the PlayStation Store and by earning trophies which have a rarity status of rare, very rare, or ultra rare as at the time of unlocking (ie. a trophy which has been earned by 50% or fewer people).
 
 There are 4 Status Levels which can be earned, and the total purchases and trophies required to earn them are cumulative.
 
