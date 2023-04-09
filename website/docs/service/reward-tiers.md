@@ -63,7 +63,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | Attribute | Type | Example Response | Description |
 | --- | --- |--- | --- |
 | __typename | String | `LoyaltyStatusCollectible` |
-| id | String | `613ab757-5a88-5f94-a683-26638f830f1b` | GUID for the collectible
+| id | String | `613ab757-5a88-5f94-a683-26638f830f1b` | ID for the collectible
 | name | String | `Level 5 Diorama - Bots Dont Breathe` | Name of the collectible
 
 ## Examples with Responses
@@ -99,7 +99,7 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
 
 </Tabs>
 
-<details><summary>Click to view full JSON response</summary>
+<details><summary>Click to view full JSON response as at service launch October 2022</summary>
 
 ```json
 {
@@ -157,6 +157,78 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
           {
             "__typename": "LoyaltyStatusCollectible",
             "id": "d45437ef-3c4b-5767-b8a4-54854507fad1",
+            "name": "Level 2 Diorama - The Astro Walk"
+          }
+        ],
+        "description": "Earn 1 trophy & 1 purchase to earn Garnet",
+        "name": "Garnet",
+        "statusLevelNumber": 2
+      }
+    ]
+  }
+}
+```
+
+</details>
+
+<details><summary>Click to view full JSON response as at January 2023</summary>
+
+```json
+{
+  "data": {
+    "loyaltyStatusLevelsMetaDataRetrieve": [
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "0c34562e-e289-519b-b852-7b143707cb9b",
+            "name": "Level 3 Diorama - A Robot Runs Through It"
+          }
+        ],
+        "description": "Earn 32 trophies & 2 purchase to earn Emerald",
+        "name": "Emerald",
+        "statusLevelNumber": 3
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [],
+        "description": "Sapphire Level after on-boarding to Sky Program",
+        "name": "Sapphire",
+        "statusLevelNumber": 1
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "0664970a-d215-5688-8995-6d55c503c0db",
+            "name": "Level 4 Diorama - Space Settlers"
+          }
+        ],
+        "description": "Earn 128 trophies & 4 purchase to earn Ruby",
+        "name": "Ruby",
+        "statusLevelNumber": 4
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "fb00fbd7-0eaa-5253-b566-8b0ec28f8f79",
+            "name": "Level 5 Diorama - Bots Don't Breathe"
+          }
+        ],
+        "description": "Invite only to Diamond Level",
+        "name": "Diamond",
+        "statusLevelNumber": 5
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "9cb866dc-a469-54cc-b7e6-21d0035f680b",
             "name": "Level 2 Diorama - The Astro Walk"
           }
         ],
