@@ -85,7 +85,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | descriptions | [JSON object<br/>`Description`](#m-json-object-Description-collectible) | | Description associated with the collectible
 | displayName | String | `Pink Monkey Diorama` | Name of the collectible
 | displayPoints | String | `200` | Cost of the reward (string formatted)
-| id | String | `85bc1d70-a9ee-55e7-a97d-905ee2d82a48` | GUID for the collectible
+| id | String | `85bc1d70-a9ee-55e7-a97d-905ee2d82a48` | ID for the reward
 | name | String | `Pink Monkey Diorama` | Name of the collectible
 | offerEndDate | Date (UTC) | `2022-11-15T23:59:00.000000Z` | Date the collectible removed from the reward store
 | offerStartDate | Date (UTC) | `2022-09-13T21:24:00.000000Z` | Date the collectible added to the reward store
@@ -126,7 +126,7 @@ Wallet credit rewards appear to be listed as generic dollar values (ie. $5, $20)
 | descriptions | [JSON object<br/>`Description`](#m-json-object-Description-wallet) | | Description associated with the wallet credit
 | displayName | String | `Wallet Credit - $20` | Name of the wallet credit
 | displayPoints | String | `4,000` | Cost of the reward (string formatted)
-| id | String | `18747538-8dce-569c-91b8-3d46bc1c7296` | GUID for the collectible
+| id | String | `18747538-8dce-569c-91b8-3d46bc1c7296` | ID for the reward
 | localizedProductClassifications | Array<br/>String | `null` | Type of product
 | monetaryValue | String | `HK$160.00` | Value of the wallet credit
 | name | String | `Wallet Credit - $20` | Name of the wallet credit
