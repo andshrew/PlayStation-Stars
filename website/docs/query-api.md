@@ -1,6 +1,9 @@
 ---
 title: Querying the API
 description: Examples for querying the API
+sidebar_position: 5
+pagination_next: null
+pagination_prev: null
 ---
 
 # Querying the API

@@ -15,6 +15,8 @@ Requests to this endpoint will retrieve the collectibles that a user has earned.
 
 The endpoint can query the authenticating account only.
 
+The response from this endpoint can be parsed into a table format by using the [Collectibles Parser](../misc/collectibles-parser.md).
+
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetUserCollectibles
 
 :::info

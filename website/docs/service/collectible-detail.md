@@ -15,6 +15,8 @@ Requests to this endpoint will retrieve the details of a specific collectible. I
 
 The endpoint can query the authenticating account, or it can query another user account (providing that the privacy settings on the other account allow it).
 
+You can view a list of collectibles which have been available on the service [here](../collectibles-reference.md).
+
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyUserCollectibleById
 
 :::info
