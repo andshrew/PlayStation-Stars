@@ -1298,5 +1298,109 @@
         "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_516_1677790736264.mp4"
       }
     ]
+  },
+  {
+    "id": "8729a56f-dc51-5b37-8cd1-bf254db02123",
+    "name": "January Balloon | Hard Game Club 2023",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-01-04T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "I defeated a demigod with a dragon on his arm, and all I got was this lousy balloon."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_496_1671737267431.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_496_1671737273743.mp4"
+      }
+    ]
+  },
+  {
+    "id": "17663e20-fb37-56c6-9a92-ee4ace402932",
+    "name": "PocketStation",
+    "rarity": "RARE",
+    "releaseDate": "2022-09-13T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Big in Japan!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_435_1664307782958.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_435_1662680308007.mp4"
+      }
+    ]
+  },
+  {
+    "id": "0b0a36a8-c7b2-50e3-aa31-565df015f07c",
+    "name": "Punto Diorama",
+    "rarity": "RARE",
+    "releaseDate": "2022-09-13T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Go forth and explore. Let the stars be your guide."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_419_1664387327058.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_419_1664387274046.mp4"
+      }
+    ]
+  },
+  {
+    "id": "2657088a-8d4a-528b-bdb4-f930681d6918",
+    "name": "Pink Monkey Diorama",
+    "rarity": "RARE",
+    "releaseDate": "2022-09-13T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Escape the ape that's in you with the help of this totally stable aspiring pop star."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_418_1664306106337.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_418_1662589943734.mp4"
+      }
+    ]
   }
 ]
