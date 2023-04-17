@@ -1402,5 +1402,83 @@
         "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_418_1662589943734.mp4"
       }
     ]
+  },
+  {
+    "id": "2f5d80b1-40cb-53a9-b90b-93691602a2f9",
+    "name": "Holy Cow!",
+    "rarity": "RARE",
+    "releaseDate": "2023-04-13T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "There’s the thrill of victory and the agony of defeat. You’ve somehow managed neither, but that’s its own kind of impressive."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_530_1680111287963.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_530_1680111290643.mp4"
+      }
+    ]
+  },
+  {
+    "id": "8535d4aa-c878-5849-9ce5-b22054299618",
+    "name": "Employee 32",
+    "rarity": "UNCOMMON",
+    "releaseDate": "2023-04-13T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Yoshida-san has been with PlayStation from the very beginning, working tirelessly to bring third party and indie games to millions of gamers around the world."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_559_1680631218369.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_559_1680631224763.mp4"
+      }
+    ]
+  },
+  {
+    "id": "4c8cc5ec-f7c0-5b5d-b1bb-3535cdb41fe8",
+    "name": "April Balloon | Hard Game Club 2023",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-04-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "I danced with the devil and all I got was this lousy balloon."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_527_1679348261786.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_527_1679348266106.mp4"
+      }
+    ]
   }
 ]
