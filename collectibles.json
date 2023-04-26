@@ -1480,5 +1480,57 @@
         "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_527_1679348266106.mp4"
       }
     ]
+  },
+  {
+    "id": "10bfa748-0d44-51aa-bc47-cfe14b5a1847",
+    "name": "Wonderbook",
+    "rarity": "HEROIC",
+    "releaseDate": "2022-12-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Are you ready to begin? Then turn the page…"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_461_1669917188062.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_461_1669917196355.mp4"
+      }
+    ]
+  },
+  {
+    "id": "5c78f97c-16fb-58e9-b892-3ace6ae0a9b4",
+    "name": "Gimme Them Beans",
+    "rarity": "UNCOMMON",
+    "releaseDate": "2023-04-23T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Do you think Sean Bean likes jelly beans? I bet he does. One does not simply walk away from these colorful treats."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_526_1679940538649.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_526_1679940543107.mp4"
+      }
+    ]
   }
 ]
