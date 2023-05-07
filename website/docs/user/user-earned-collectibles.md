@@ -65,7 +65,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | assets | [JSON object<br/>`Media`](#m-json-object-Media-collectible) | | Media associated with the collectible (images, video)
 | id | String | `4aaf72d0-ceeb-57ab-ad13-09e4ee36ae2e` | GUID for the collectible
 | name | String | `Star Gazer Telescope` | Name of the collectible
-| rarity | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`LEGENDARY` | Rarity of the collectible
+| rarity | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`HEROIC`<br/>`LEGENDARY`<br/>`MYTHIC` | Rarity of the collectible
 
 ### Media (Collectible) JSON object {#m-json-object-Media-collectible}
 

@@ -72,7 +72,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | descriptions | [JSON object<br/>`Description`](#m-json-object-Description-collectible) | | Description associated with the collectible
 | id | String | `88d25cfa-26ad-572a-9335-a32b9bcabe13` | GUID for the collectible
 | name | String | `PlayStation Tech Demo Tyrannosaurus Rex` | Name of the collectible
-| rarityType | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`HEROIC`<br/>`LEGENDARY` | Rarity of the collectible
+| rarityType | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`HEROIC`<br/>`LEGENDARY`<br/>`MYTHIC` | Rarity of the collectible
 | releaseDate | Date (UTC) | `2022-10-01T00:00:00.000000Z` | Date the collectible became available
 | unlockedDate | Date (UTC) | `2022-10-01T13:06:01.004772Z`<br/>`null` | Date the user earned the collectible<br/>`null` if not earned
 
