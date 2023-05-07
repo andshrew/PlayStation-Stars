@@ -1532,5 +1532,317 @@
         "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_526_1679940543107.mp4"
       }
     ]
+  },
+  {
+    "id": "73a87881-fe22-53b1-84eb-4985e424b730",
+    "name": "The Warm and Fuzzies",
+    "rarity": "RARE",
+    "releaseDate": "2023-05-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Making your display case cosier with every collectible."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_557_1682636951265.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_557_1682636953789.mp4"
+      }
+    ]
+  },
+  {
+    "id": "d9d28010-8350-59d5-a100-ccf4402cbee5",
+    "name": "Fen | CraiggerBears 2023",
+    "rarity": "RARE",
+    "releaseDate": "2023-03-12T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Mysterious plush bears that seem to show up on every world. They are said to carry the optimism, kindness and creativity of a fallen hero missed by his comrades. CraiggerBear created by C&J Goodman."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_540_1678211474840.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_540_1678211478114.mp4"
+      }
+    ]
+  },
+  {
+    "id": "827b9779-076c-5789-a438-9f84fd73ee5a",
+    "name": "Hiro | CraiggerBears 2023",
+    "rarity": "RARE",
+    "releaseDate": "2023-01-20T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Mysterious plush bears that seem to show up on every world. They are said to carry the optimism, kindness and creativity of a fallen hero missed by his comrades. CraiggerBear created by C&J Goodman."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_481_1674236176384.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_481_1674236178157.mp4"
+      }
+    ]
+  },
+  {
+    "id": "2ce62f14-c517-5c13-9483-af288fff53cf",
+    "name": "Mac | CraiggerBears 2023",
+    "rarity": "RARE",
+    "releaseDate": "2023-01-20T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Mysterious plush bears that seem to show up on every world. They are said to carry the optimism, kindness and creativity of a fallen hero missed by his comrades. CraiggerBear created by C&J Goodman."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_482_1670354682360.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_482_1670354689206.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f0ebc7f1-f9db-5f49-aba9-1737584cdeec",
+    "name": "Moe | CraiggerBears 2023",
+    "rarity": "RARE",
+    "releaseDate": "2023-01-20T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Mysterious plush bears that seem to show up on every world. They are said to carry the optimism, kindness and creativity of a fallen hero missed by his comrades. CraiggerBear created by C&J Goodman."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_483_1670354633900.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_483_1670354638946.mp4"
+      }
+    ]
+  },
+  {
+    "id": "ef2e1596-e8be-5728-bd90-0ec2d929ef4a",
+    "name": "Monty | CraiggerBears 2023",
+    "rarity": "RARE",
+    "releaseDate": "2023-03-12T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Mysterious plush bears that seem to show up on every world. They are said to carry the optimism, kindness and creativity of a fallen hero missed by his comrades. CraiggerBear created by C&J Goodman."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_539_1678138333462.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_539_1678138342892.mp4"
+      }
+    ]
+  },
+  {
+    "id": "4cafcb18-053d-500c-8871-9e28ed0a723a",
+    "name": "Reyna | CraiggerBears 2023",
+    "rarity": "RARE",
+    "releaseDate": "2023-01-29T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Mysterious plush bears that seem to show up on every world. They are said to carry the optimism, kindness and creativity of a fallen hero missed by his comrades. CraiggerBear created by C&J Goodman."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_518_1674761892721.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_518_1675214483318.mp4"
+      }
+    ]
+  },
+  {
+    "id": "b5195a53-a74d-5c7e-ad58-33fc99c38fa0",
+    "name": "May’s Robbit",
+    "rarity": "UNCOMMON",
+    "releaseDate": "2023-05-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! The cameras love you!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_545_1682824796927.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_545_1682824901675.mp4"
+      }
+    ]
+  },
+  {
+    "id": "3b065ed7-f8f5-58d2-b2ed-358b5062454c",
+    "name": "BD-1",
+    "rarity": "LEGENDARY",
+    "releaseDate": "2023-05-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "A companion droid designed to assist operations in remote or dangerous locations across the galaxy, BD-1 has an almost disturbing enthusiasm for data collection and little regard for self-preservation."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_576_1683218786179.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_576_1683219286672.mp4"
+      }
+    ]
+  },
+  {
+    "id": "8a925ed2-f94b-5ed7-abb9-816c51aae2f8",
+    "name": "Last One Standing",
+    "rarity": "RARE",
+    "releaseDate": "2023-05-04T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "I love the smell of chicken pie in the morning."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_553_1683056400593.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_553_1683056408152.mp4"
+      }
+    ]
+  },
+  {
+    "id": "206413df-034c-5e74-91a0-d39ee6331ed6",
+    "name": "PS VR Aim Controller",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-05-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Pew pew part two."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_546_1682445430239.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_546_1682445435625.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f7fe2289-2fb4-5739-954f-ca58af2e0f94",
+    "name": "Roller Blade",
+    "rarity": "RARE",
+    "releaseDate": "2023-05-04T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Commemorating your journey to become the ultimate fighter for May 2023."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_551_1682637678631.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_551_1682637681928.mp4"
+      }
+    ]
   }
 ]
