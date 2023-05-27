@@ -1844,5 +1844,109 @@
         "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_551_1682637681928.mp4"
       }
     ]
+  },
+  {
+    "id": "bdd0f9f5-19d1-5db4-b786-f297a720b477",
+    "name": "Batter Up",
+    "rarity": "RARE",
+    "releaseDate": "2023-05-11T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "There’s the thrill of victory and the agony of defeat. Which did you achieve this month? Either way, we think you crushed it out there, champ."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_552_1683590302181.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_552_1683590308891.mp4"
+      }
+    ]
+  },
+  {
+    "id": "d7911759-c430-5126-b3e4-7f19d49b6ab6",
+    "name": "Biscuit Monster",
+    "rarity": "UNCOMMON",
+    "releaseDate": "2023-05-14T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Every day is biscuit day in this house."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_549_1682445356413.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_549_1682445363783.mp4"
+      }
+    ]
+  },
+  {
+    "id": "cf9b6d3d-4856-56c6-92af-29be2afa592d",
+    "name": "Sony AM Radio TR-1818",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-05-20T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Before the flip phone, there was the flip … radio? Yep, this cute little radio’s clamshell design meant that you could fold it up and carry it anywhere with the attached strap."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_554_1682445042375.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_554_1682445049181.mp4"
+      }
+    ]
+  },
+  {
+    "id": "24f6b481-162d-5176-a32c-b5df9200f1d6",
+    "name": "May Balloon | Hard Game Club 2023",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-05-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "I defeated the Time Keeper and all I got was this lousy balloon."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_550_1682445281198.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_550_1682445288759.mp4"
+      }
+    ]
   }
 ]
