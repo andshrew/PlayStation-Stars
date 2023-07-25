@@ -1,13 +1,25 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.0/containers/javascript-node
+// https://github.com/devcontainers/images/tree/main/src/javascript-node
+// https://github.com/devcontainers/features/tree/main/src/powershell
+// https://containers.dev/overview
 {
 	"name": "Node.js",
-	"build": {
-		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick a Node version: 18, 16, 14.
-		// Append -bullseye or -buster to pin to an OS version.
-		// Use -bullseye variants on local arm64/Apple Silicon.
-		"args": { "VARIANT": "16-bullseye" }
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:16-bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": "true",
+			"username": "node",
+			"upgradePackages": "true"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "none"
+		},
+		"ghcr.io/devcontainers/features/git:1": {
+            "version": "latest",
+            "ppa": "false"
+        },
+		"ghcr.io/devcontainers/features/powershell:1": {
+            "version": "latest"
+        }
 	},
 
 	// Configure tool-specific properties.
@@ -16,7 +28,8 @@
 		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"dbaeumer.vscode-eslint"
+				"dbaeumer.vscode-eslint",
+				"github.vscode-github-actions"
 			]
 		}
 	},
@@ -27,9 +40,14 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
 
-	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node",
-	"features": {
-		"powershell": "latest"
-	}
+	"containerUser": "node",
+	"updateRemoteUserUID": true,
+	// Map the 'node' user UID and GID so that the containers workspace directory is owned by
+	// the 'node' user rather than root
+	// https://docs.podman.io/en/latest/markdown/options/userns.container.html 
+	"runArgs": [
+		"--userns=keep-id:uid=1000,gid=1000"
+	]
 }
