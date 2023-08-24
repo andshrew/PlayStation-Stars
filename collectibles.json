@@ -2338,5 +2338,395 @@
         "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_595_1687452199271.mp4"
       }
     ]
+  },
+  {
+    "id": "549364fa-f81e-544f-ba16-cd2a895b186f",
+    "name": "A Mellow Mood",
+    "rarity": "RARE",
+    "releaseDate": "2023-07-19T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Making your display case cosier with every collectible."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_599_1689282195687.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_599_1689282203687.mp4"
+      }
+    ]
+  },
+  {
+    "id": "89a3b28b-8d34-5bb8-b210-171180da5a6a",
+    "name": "A nice cuppa",
+    "rarity": "RARE",
+    "releaseDate": "2023-08-16T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Making your display case cosier with every collectible."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_613_1690236790812.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_613_1690236795610.mp4"
+      }
+    ]
+  },
+  {
+    "id": "3a9e74ff-9f0c-5054-8d1f-885bd12219f5",
+    "name": "August’s Robbit",
+    "rarity": "UNCOMMON",
+    "releaseDate": "2023-08-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! Thank you for being such a capable dance partner at the Tango Festival!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_606_1690587386036.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_606_1690587390201.mp4"
+      }
+    ]
+  },
+  {
+    "id": "251da7d8-9625-5092-b2d0-3c395b1e3481",
+    "name": "Big Pineapple",
+    "rarity": "RARE",
+    "releaseDate": "2023-07-18T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "By three they come. By three, thy way opens."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_585_1689612767218.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_585_1689612776171.mp4"
+      }
+    ]
+  },
+  {
+    "id": "dbc9ad93-631d-58e8-ba4f-1fbac6b02f2e",
+    "name": "Buzzer Beater",
+    "rarity": "RARE",
+    "releaseDate": "2023-07-20T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "There’s the thrill of victory and the agony of defeat. Which did you achieve this month? Either way, we think you crushed it out there, champ."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_597_1687452359206.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_597_1687452367441.mp4"
+      }
+    ]
+  },
+  {
+    "id": "c158e5a3-d180-5d50-b7a1-63347cd1335e",
+    "name": "EVO 2023 | Chun-Li",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-08-04T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "A former high-kicking ICPO agent, Chun-Li looks after Li-Fen, a victim of the Black Moon Incident. With Shadaloo sundered, she now runs kung fu classes, and has become a well-loved member of the local community."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_627_1690909657143.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_627_1690909662878.mp4"
+      }
+    ]
+  },
+  {
+    "id": "6198033a-a9cd-5430-8a6e-a016c60077cb",
+    "name": "Hikkuri bikkuri dock",
+    "rarity": "RARE",
+    "releaseDate": "2023-08-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Commemorating your journey to become the ultimate fighter for August 2023."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_610_1690909149731.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_610_1690909158183.mp4"
+      }
+    ]
+  },
+  {
+    "id": "921fc5ed-9cff-5924-ad06-b33990e99fef",
+    "name": "Last one standing",
+    "rarity": "RARE",
+    "releaseDate": "2023-08-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "I love the smell of chicken tikka masala in the morning."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_612_1690236763748.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_612_1690236773684.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f9c9095c-6151-537a-8fe4-0e6416c3accc",
+    "name": "NPA Repulsion Regulator",
+    "rarity": "RARE",
+    "releaseDate": "2023-08-02T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "\"Should be reliable, but if it stops working, you'll know almost immediately.\" —Deputy Commander Sloane"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_605_1690909216508.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_605_1690909221246.mp4"
+      }
+    ]
+  },
+  {
+    "id": "2ffd7497-a4de-552e-9961-c2bef40b486b",
+    "name": "That’s Not a Cake",
+    "rarity": "UNCOMMON",
+    "releaseDate": "2023-07-21T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "THAT'S a Cake"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_594_1689782224076.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_594_1689782230479.mp4"
+      }
+    ]
+  },
+  {
+    "id": "756edf42-d9a2-571c-bb4b-d842ad6565ae",
+    "name": "The Vault",
+    "rarity": "RARE",
+    "releaseDate": "2023-07-27T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "You’re Underground now. There’s no going back."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_564_1687382277413.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_564_1690928840616.mp4"
+      }
+    ]
+  },
+  {
+    "id": "69e4c30b-53ae-553a-a82c-dd8c6c80ee03",
+    "name": "Try, try again",
+    "rarity": "RARE",
+    "releaseDate": "2023-08-17T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "There’s the thrill of victory and the agony of defeat. Which did you achieve this month? Either way, we think you crushed it out there, champ."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_611_1692205504875.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_611_1692205512701.mp4"
+      }
+    ]
+  },
+  {
+    "id": "36588e36-c9c9-5df9-b39d-d4b0631352de",
+    "name": "Let go of my waffles",
+    "rarity": "UNCOMMON",
+    "releaseDate": "2023-08-24T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Waffle is such a fun word. And here is a fun collectible to remember Waffle Day 2023!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_608_1692636572575.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_608_1692636580839.mp4"
+      }
+    ]
+  },
+  {
+    "id": "e395234d-5ee9-5b67-8472-9fba6a2edcba",
+    "name": "August Balloon | Hard Game Club 2023",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-08-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "I defeated every boss on Inkwell Isle 2 and all I got was this lousy balloon."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_609_1690236728256.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_609_1690236733652.mp4"
+      }
+    ]
+  },
+  {
+    "id": "2564cc9c-f0df-5426-99e2-a665299a1341",
+    "name": "Tired Balloon | Hard Game Club 2023",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-08-24T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "I (finally) defeated Phrike and all I got was this deflated balloon."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_615_1692219761020.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_615_1692219773033.mp4"
+      }
+    ]
   }
 ]
