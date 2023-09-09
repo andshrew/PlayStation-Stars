@@ -2728,5 +2728,213 @@
         "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_615_1692219773033.mp4"
       }
     ]
+  },
+  {
+    "id": "11f336de-4268-5fc9-9715-76d88a6b899b",
+    "name": "DownBeat!",
+    "rarity": "RARE",
+    "releaseDate": "2023-09-07T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Commemorating your journey to become the ultimate fighter for September 2023."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_648_1694031498883.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_648_1694031505732.mp4"
+      }
+    ]
+  },
+  {
+    "id": "c248e7cb-d80d-5dcf-acef-4f3932970aff",
+    "name": "Gran Turismo hits the big screen",
+    "rarity": "RARE",
+    "releaseDate": "2023-08-25T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thanks for celebrating the release of Gran Turismo with us! We’re thrilled to see our fleet of fast cars on the big screen, and we’re even more thrilled to share the occasion with you."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_617_1692654893498.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_617_1692654897469.mp4"
+      }
+    ]
+  },
+  {
+    "id": "eb164b52-1205-5c69-becd-d8a6f1e976dc",
+    "name": "Last One Standing",
+    "rarity": "RARE",
+    "releaseDate": "2023-09-07T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "I love the smell of chicken feet in the morning"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_650_1694102030731.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_650_1694102039216.mp4"
+      }
+    ]
+  },
+  {
+    "id": "65dd1dc7-6422-5ab2-8a44-3101cd460a28",
+    "name": "September’s Robbit",
+    "rarity": "UNCOMMON",
+    "releaseDate": "2023-09-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! Did you save some mooncake for me?"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_644_1693515129164.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_644_1693515141009.mp4"
+      }
+    ]
+  },
+  {
+    "id": "9d2c410f-d4d9-57cc-9d68-50c506643040",
+    "name": "Why Did the Chicken Cross the Road?",
+    "rarity": "RARE",
+    "releaseDate": "2023-09-07T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Because it’s a chicken car, duh."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_658_1694017903742.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_658_1694017912268.mp4"
+      }
+    ]
+  },
+  {
+    "id": "afba52be-50f6-5da1-b967-873a973c72ad",
+    "name": "Pixel perfection",
+    "rarity": "RARE",
+    "releaseDate": "2023-08-29T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Sea of Stars? PlayStation Stars? Just call us star-crossed lovers."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_660_1693325172731.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_660_1693325179233.mp4"
+      }
+    ]
+  },
+  {
+    "id": "cb4860ee-1342-57a9-9cfe-5c6a95ed9b05",
+    "name": "Shiny math rocks",
+    "rarity": "RARE",
+    "releaseDate": "2023-09-06T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Go click-clack."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_616_1693947310580.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_616_1693947303197.mp4"
+      }
+    ]
+  },
+  {
+    "id": "ef36b9ac-65bc-59d7-9d2a-fac92c214036",
+    "name": "September Balloon | Hard Game Club 2023",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-09-07T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "I defeated Donu and Deca and all I got was this lousy balloon."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_647_1692982018439.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_647_1692982024021.mp4"
+      }
+    ]
   }
 ]
