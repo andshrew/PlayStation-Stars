@@ -10,7 +10,7 @@ import CollectiblesTable from '@site/src/components/collectibles.js';
 
 # Collectibles Reference
 
-This page lists the collectibles which have been available to earn or buy, including links to their original high resolution assets (a static 2160x2160 image, and a rotating 1080p video).
+This page lists the collectibles which have been available to earn or buy, including links to their original high resolution assets (a static 2160x2160 image, and a rotating 1080p video). Click the collectibles name, rarirty or release date to view the collectibles details.
 
 :::info
 

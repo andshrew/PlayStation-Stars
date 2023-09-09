@@ -1,0 +1,91 @@
+
+:root {
+    --collectible-table-highlight: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] {
+    --collectible-table-highlight: rgba(255, 255, 255, 0.5);
+}
+
+[collectible-rarity='common'] {
+    --collectible-border-colour: white;
+}
+
+[collectible-rarity='uncommon'] {
+    --collectible-border-colour: teal;
+}
+
+[collectible-rarity='rare'] {
+    --collectible-border-colour: royalblue;
+}
+
+[collectible-rarity='heroic'] {
+    --collectible-border-colour: violet;
+}
+
+[collectible-rarity='legendary'] {
+    --collectible-border-colour: hotpink;
+}
+
+[collectible-rarity='mythic'] {
+    --collectible-border-colour: gold;
+}
+
+.dialog {
+    width: 450px;
+    max-width: 75%;
+    max-height: 100%;
+    background-color: var(--ifm-background-color);
+}
+
+.dialog button {
+    cursor: pointer;
+}
+
+.close-button {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.text-stretch {
+    text-align: justify;
+}
+
+.main-table tbody tr:hover {
+    background: var(--collectible-table-highlight);
+    overflow-x: scroll;
+    transition: background 200ms;
+}
+
+.main-table tbody td:nth-child(2):hover,
+.main-table tbody td:nth-child(3):hover,
+.main-table tbody td:nth-child(4):hover {
+    cursor: pointer;
+}
+
+.dialog-table {
+    border-collapse:separate;
+}
+
+.dialog-table th {
+    padding: 3px;
+    border-style: none;
+}
+
+.dialog-table td {
+    text-align: center;
+    padding: 3px;
+    border-style: none;
+}
+
+.collectible-image {
+    background-color: var(--ifm-table-stripe-background);
+    border-radius: 0.25rem;
+    border-style: solid;
+    border-color: var(--collectible-border-colour);
+    border-spacing: 3px;
+    border-width: 0.8em;
+    max-width: 60%;
+}

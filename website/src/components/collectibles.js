@@ -1,5 +1,7 @@
 // Generates a HTML table from a JSON data file for the collectibles reference page
 import React, { Component } from 'react';
+import styles from '@site/src/css/collectibles.modules.css';
+
 
 class CollectiblesTable extends Component {
   constructor(props) {
@@ -9,7 +11,7 @@ class CollectiblesTable extends Component {
       sortDateAsc: true,
       sortRarityAsc: true,
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleDialogClick = this.handleDialogClick.bind(this);
     this.sortName = this.sortName.bind(this);
     this.sortDate = this.sortDate.bind(this);
     this.sortRarity = this.sortRarity.bind(this);
@@ -22,8 +24,27 @@ class CollectiblesTable extends Component {
     this.setState({ data: collectibles } );
   }
 
-  handleClick(event) {
-    // Add collectible description on click
+  handleDialogClick(event, index) {
+    // Display a dialog for an individual collectible
+    var collectible = this.state.data[index]
+    var dialog = document.getElementById('displayDialog');
+
+    var description = collectible.description.find((c) => c.type == 'LONG')
+    document.getElementById('dialogDesc').textContent = description.value;
+    document.getElementById('dialogName').textContent = collectible.name;
+    document.getElementById('dialogRelease').textContent = new Date(collectible.releaseDate).toLocaleDateString(navigator.language);
+    document.getElementById('dialogRarity').textContent = collectible.rarity;
+    var imageUrl = collectible.media.find((c) => c.type == 'IMAGE')
+    document.getElementById('dialogImage').src = imageUrl.url;
+    document.getElementById('dialogImage').setAttribute('collectible-rarity', collectible.rarity.toLowerCase());
+    
+    dialog.showModal();
+  }
+
+  handleDialogClose() {
+    var dialog = document.getElementById("displayDialog");
+    document.getElementById('dialogImage').src = '';
+    dialog.close();
   }
 
   sortName() {
@@ -59,15 +80,13 @@ class CollectiblesTable extends Component {
   render() {
     return (
         <div style={{
-          display: 'flex',
+          display: 'block',
         }}>
-          <div id={"displayTable"} style={{
-            display: 'block'
-          }}>
-            <button onClick={this.sortDate}>Sort Date</button>
-            <button onClick={this.sortName}>Sort Name</button>
+          <div id='displayTable'>
+            <button onClick={this.sortDate}>Sort Release Date</button>&nbsp;
+            <button onClick={this.sortName}>Sort Name</button>&nbsp;
             <button onClick={this.sortRarity}>Sort Rarity</button>
-            <table>
+            <table class={styles['main-table']}>
               <thead>
                 <tr>
                   <th>ID</th>
@@ -80,11 +99,11 @@ class CollectiblesTable extends Component {
               </thead>
               <tbody>
                 {this.state.data.map((item, index) => (
-                  <tr key={index} onClick={this.handleClick}>
+                  <tr key={index}>
                     <td>{item.id}</td>
-                    <td>{item.name}</td>
-                    <td>{item.rarity}</td>
-                    <td>{new Date(item.releaseDate).toLocaleDateString(navigator.language)}</td>
+                    <td onClick={((e) => this.handleDialogClick(e, index))}>{item.name}</td>
+                    <td onClick={((e) => this.handleDialogClick(e, index))}>{item.rarity}</td>
+                    <td onClick={((e) => this.handleDialogClick(e, index))}>{new Date(item.releaseDate).toLocaleDateString(navigator.language)}</td>
                     {item.media.map((mediaItem, mediaIndex) => (
                       <td key={mediaIndex}><a href={mediaItem.url} target={"_blank"}>{mediaItem.type}</a></td>
                     ))}
@@ -93,6 +112,39 @@ class CollectiblesTable extends Component {
               </tbody>
             </table>
           </div>
+          <dialog id='displayDialog' class={styles.dialog}>
+            <span onClick={this.handleDialogClose} class={styles['close-button']}>&times;</span>
+            <center><b><p id='dialogName'></p></b></center>
+            <p class={styles['text-stretch']} id='dialogDesc'></p>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center'
+            }}>
+              <table class={styles['dialog-table']}>
+                <thead>
+                  <tr>
+                    <th>Release Date</th>
+                    <th>Rarity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id='dialogRelease'></td>
+                    <td id='dialogRarity'></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <span id='dialogImageSpan' style={{
+              display: 'block',
+            }}>
+              <p><center>
+                <img id='dialogImage' class={styles['collectible-image']} loading='lazy'></img>
+              </center></p>
+            </span>
+            <center><button id='dialogClose' onClick={this.handleDialogClose}>Close</button></center>
+          </dialog>
         </div>
     );
   }
