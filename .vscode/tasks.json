@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "website",
+			"problemMatcher": [],
+			"label": "npm: start - website",
+			"detail": "Serve local development (realtime editing)"
+		},
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "website",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: build - website",
+			"detail": "Build the website"
+		},
+		{
+			"type": "npm",
+			"script": "serve",
+			"path": "website",
+			"problemMatcher": [],
+			"label": "npm: serve - website",
+			"detail": "Serve the build directory"
+		}
+	]
+}
