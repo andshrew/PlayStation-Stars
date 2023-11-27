@@ -50,6 +50,55 @@ If you query with an account which has not enrolled with PlayStation Stars then 
   }
 }
 ```
+</details>
+:::
+
+:::info
+
+Querying a campaign id which the authenticating account is not eligible for may result in an API error.
+
+<details><summary>Click to view full response</summary>
+
+```json
+{
+  "errors": [
+    {
+      "message": "The server encountered an unexpected condition that prevented it from fulfilling the request.",
+      "extensions": {
+        "type": "NimbusNormalizedError",
+        "error": {
+          "reason": "InternalError",
+          "source": "-1",
+          "code": -1,
+          "message": "The server encountered an unexpected condition that prevented it from fulfilling the request.",
+          "referenceId": "bd09f408-5f65-4ed4-a2e7-13d6a3a7fb6a"
+        },
+        "statusCode": 500,
+        "errorCode": -1,
+        "humanReadableCode": "",
+        "humanReadableValidationErrors": [],
+        "apiName": "getCampaignById"
+      },
+      "type": "NimbusNormalizedError",
+      "error": {
+        "reason": "InternalError",
+        "source": "-1",
+        "code": -1,
+        "message": "The server encountered an unexpected condition that prevented it from fulfilling the request.",
+        "referenceId": "bd09f408-5f65-4ed4-a2e7-13d6a3a7fb6a"
+      },
+      "statusCode": 500,
+      "errorCode": -1,
+      "humanReadableCode": "",
+      "humanReadableValidationErrors": [],
+      "apiName": "getCampaignById"
+    }
+  ],
+  "data": {
+    "loyaltyCampaignByIdRetrieve": null
+  }
+}
+```
 
 </details>
 
@@ -59,13 +108,13 @@ If you query with an account which has not enrolled with PlayStation Stars then 
 
 | Parameter | Value |
 | --- | --- |
-| operationName | metGetCampaignGroup |
-| variables | `{"campaignId":"162f269d-1ed9-5647-a015-30cf1b76a766"}` |
-| extensions | `{"persistedQuery":{"version":1,"sha256Hash":"eabc9a2d92e6c8604eb611c22bbc0f8ffce673dee29b0c1f82040f5a4918264b"}}` |
+| operationName | metLoyaltyCampaignByIdRetrieve |
+| variables | `{"campaignId":"a8faa377-f08b-5d1d-a27c-68cc32930105"}` |
+| extensions | `{"persistedQuery":{"version":1,"sha256Hash":"068f75eb174b7e9ee31530797f4df6c881219fdbc9b4d6786d900321f6999829"}}` |
 
 | Property | Parent Parameter | Type | Example Values | Description | Required |
 | --- | --- | --- | --- | --- | --- |
-| campaignId | variables | String | `162f269d-1ed9-5647-a015-30cf1b76a766` | GUID of the campaign to retrieve | Yes |
+| campaignId | variables | String | `a8faa377-f08b-5d1d-a27c-68cc32930105` | GUID of the campaign to retrieve | Yes |
 
 ## Output JSON Response
 
@@ -88,10 +137,13 @@ A JSON response is returned. The following are returned under the `data` attribu
 | estimatedTime | String | `null` | Estimated time to complete the campaign(?)
 | id | String | `162f269d-1ed9-5647-a015-30cf1b76a766` | GUID for the campaign
 | images | [JSON object<br/>`Media`](#m-json-object-Media-campaign) | | Media associated with the campaign (images, video)
+| isNew | Boolean | `true` | `true` until user interacts with the campaign
+| isRegistrable | Boolean | `true` | `true` if user is eligible for the campaign
 | isRegistrationRequired | Boolean | `true` | True if the user has not registered for the campaign
 | name | String | `PlayStation Store Picks` | Name of the campaign
 | productId | String | `null`<br/>`HP0700-PPSA05164_00-SDGUNBATTLEA0000` | PlayStation Store Product Id associated with the campaign<br/>`null` if not associated with a store product
 | progress | Numeric | `0` | Users progress towards completing the campaign
+| remainingTime | Numeric | `0`<br/>`2678340` | Seconds until the campaign ends
 | startDate | Date (UTC) | `2022-09-12T16:00:00.000000Z` | Date the campaign begins
 | status | String | `NOT_REGISTERED`<br/>`AUTO_REGISTERED`<br/>`REGISTERED`<br/>`IN_PROGRESS`<br/>`EXPIRED` | Users status for the campaign
 | tasks | String | [JSON object<br/>`LoyaltyCampaignTask`](#m-json-object-LoyaltyCampaignTask) | Collections of tasks to complete the campaign
@@ -114,7 +166,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | assets | [JSON object<br/>`Media`](#m-json-object-Media-collectible) | | Media associated with the collectible (images, video)
 | id | String | `4a9d9d67-e29f-598c-bb57-b6689456aa8c` | GUID for the collectible
 | name | String | `Novelty Toy Fight Trophy` | Name of the collectible
-| rarityType | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`HEROIC`<br/>`LEGENDARY` | Rarity of the collectible
+| rarityType | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`HEROIC`<br/>`LEGENDARY`<br/>`MYTHIC` | Rarity of the collectible
 
 ### Media (Collectible) JSON object {#m-json-object-Media-collectible}
 
@@ -131,6 +183,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | Attribute | Type | Example Response | Description |
 | --- | --- |--- | --- |
 | __typename | String | `LoyaltyCampaignTask` |
+| conceptId | String | `10007607`<br/>`null` | Concept Id associated with the task<br/>`null` if not linked with a specific game title
 | description | String | `Play any game (PS4/PS5).` | Description of the task
 | id | String | `e4da3be6-c521-5130-b976-4034dea9a212` | GUID for the task
 | isLocked | Boolean | `false` | Unknown (no examples of `true`)
@@ -138,18 +191,19 @@ A JSON response is returned. The following are returned under the `data` attribu
 | productId | String | `null` | PlayStation Store Product Id associated with the task<br/>`null` if not associated with a store product
 | progress | Numeric | `0`<br/>`null` | Users progress towards completing the task<br/>May be `null` if not registered for the campaign
 | status | String | `COMPLETED`<br/>`NOT_REGISTERED`<br/>`AUTO_REGISTERED`<br/>`NOT_STARTED` | Users status for the task
+| type | String | `CONCEPT`<br/>`null` | Type of task?
 
 
 ## Examples with Responses
 
-### Example 1 - Retrieve collectible reward campaign with id `23fc3a5d-34bf-509c-b381-7b40bd8611f3` for the authenticating account
+### Example 1 - Retrieve collectible reward campaign with id `a8faa377-f08b-5d1d-a27c-68cc32930105` for the authenticating account
 
 <Tabs>
 <TabItem value="example1-encoded-url" label="Encoded URL">
 
 _See [using a Web Browser to query the API](../query-api#web-browser)_
 
-    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables=%7B%22campaignId%22%3A%2223fc3a5d-34bf-509c-b381-7b40bd8611f3%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320%22%7D%7D
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables=%7B%22campaignId%22%3A%22a8faa377-f08b-5d1d-a27c-68cc32930105%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22068f75eb174b7e9ee31530797f4df6c881219fdbc9b4d6786d900321f6999829%22%7D%7D
 
 </TabItem>
 
@@ -157,7 +211,7 @@ _See [using a Web Browser to query the API](../query-api#web-browser)_
 
 _See [using a Web Browser to query the API](../query-api#web-browser)_
 
-    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"23fc3a5d-34bf-509c-b381-7b40bd8611f3"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"a8faa377-f08b-5d1d-a27c-68cc32930105"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"068f75eb174b7e9ee31530797f4df6c881219fdbc9b4d6786d900321f6999829"}}
 
 </TabItem>
 
@@ -166,7 +220,7 @@ _See [using a Web Browser to query the API](../query-api#web-browser)_
 _See [using PowerShell to query the API](../query-api#powershell-7)_
 
 ```powershell
-Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"23fc3a5d-34bf-509c-b381-7b40bd8611f3"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}' -Authentication Bearer -Token $token
+Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"a8faa377-f08b-5d1d-a27c-68cc32930105"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"068f75eb174b7e9ee31530797f4df6c881219fdbc9b4d6786d900321f6999829"}}' -Authentication Bearer -Token $token
 ```
 
 </TabItem>
@@ -189,64 +243,69 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
             "altText": null,
             "role": "IMAGE",
             "type": "IMAGE",
-            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_428_1663345652984.png"
+            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_687_1698711685423.png"
           },
           {
             "__typename": "Media",
             "altText": null,
             "role": "VIDEO",
             "type": "VIDEO",
-            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_428_1663345660772.mp4"
+            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_687_1698711696679.mp4"
           }
         ],
-        "id": "88d25cfa-26ad-572a-9335-a32b9bcabe13",
-        "name": "PlayStation Tech Demo Tyrannosaurus Rex ",
+        "id": "90c66449-9c4d-5eeb-a07a-254b2a1d1ec0",
+        "name": "November’s Robbit",
         "rarityType": "UNCOMMON"
       },
-      "description": "Happy October! Always good to see you.",
+      "description": "Crunchy leaves, a crisp breeze, harvest festivals… it’s autumn in the northern hemisphere! Celebrate the changing of seasons with us by playing some games.",
       "displayPoints": "",
-      "endDate": "2022-10-31T15:59:00.000000Z",
+      "endDate": "2023-12-01T03:59:00.000000Z",
       "estimatedTime": null,
-      "id": "23fc3a5d-34bf-509c-b381-7b40bd8611f3",
+      "id": "a8faa377-f08b-5d1d-a27c-68cc32930105",
       "images": [
         {
           "__typename": "Media",
           "altText": null,
           "role": "IMAGE",
           "type": "IMAGE",
-          "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_1372_1663708610342.png"
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_2494_1697482637592.png"
         },
         {
           "__typename": "Media",
           "altText": null,
           "role": "TILE",
           "type": "IMAGE",
-          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_428_1663345652984.png"
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_687_1698711685423.png"
         },
         {
           "__typename": "Media",
           "altText": null,
           "role": "TILE",
           "type": "IMAGE",
-          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_428_1663345660772.mp4"
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_687_1698711696679.mp4"
         }
       ],
+      "isNew": false,
+      "isRegistrable": true,
       "isRegistrationRequired": false,
-      "name": "October Check-in",
+      "name": "November Check-In",
       "productId": null,
       "progress": 0,
-      "startDate": "2022-09-30T16:00:00.000000Z",
+      "remainingTime": 288138,
+      "startDate": "2023-11-01T04:00:00.000000Z",
       "status": "AUTO_REGISTERED",
       "tasks": [
         {
           "__typename": "LoyaltyCampaignTask",
-          "description": "Play any game (PS4/PS5).",
-          "id": "e4da3be6-c521-5130-b976-4034dea9a212",
+          "conceptId": null,
+          "description": "Drop the baked good and play any game on PS4 or PS5 for your collectible.",
+          "id": "b284a7b2-b24c-550e-b9d6-2fab9ce70a3e",
           "isLocked": false,
           "name": null,
           "productId": null,
           "progress": 0,
-          "status": "NOT_STARTED"
+          "status": "NOT_STARTED",
+          "type": null
         }
       ]
     }
@@ -256,14 +315,14 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
 
 </details>
 
-### Example 2 - Retrieve points reward campaign with id `162f269d-1ed9-5647-a015-30cf1b76a766` for the authenticating account
+### Example 2 - Retrieve points reward campaign with id `b5c96532-2544-5c66-ad78-fa45662577b0` for the authenticating account
 
 <Tabs>
 <TabItem value="example2-encoded-url" label="Encoded URL">
 
 _See [using a Web Browser to query the API](../query-api#web-browser)_
 
-    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables=%7B%22campaignId%22%3A%22162f269d-1ed9-5647-a015-30cf1b76a766%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320%22%7D%7D
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables=%7B%22campaignId%22%3A%22b5c96532-2544-5c66-ad78-fa45662577b0%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22068f75eb174b7e9ee31530797f4df6c881219fdbc9b4d6786d900321f6999829%22%7D%7D
 
 </TabItem>
 
@@ -271,7 +330,7 @@ _See [using a Web Browser to query the API](../query-api#web-browser)_
 
 _See [using a Web Browser to query the API](../query-api#web-browser)_
 
-    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"162f269d-1ed9-5647-a015-30cf1b76a766"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"b5c96532-2544-5c66-ad78-fa45662577b0"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"068f75eb174b7e9ee31530797f4df6c881219fdbc9b4d6786d900321f6999829"}}
 
 </TabItem>
 
@@ -280,7 +339,7 @@ _See [using a Web Browser to query the API](../query-api#web-browser)_
 _See [using PowerShell to query the API](../query-api#powershell-7)_
 
 ```powershell
-Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"162f269d-1ed9-5647-a015-30cf1b76a766"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}' -Authentication Bearer -Token $token
+Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"b5c96532-2544-5c66-ad78-fa45662577b0"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"068f75eb174b7e9ee31530797f4df6c881219fdbc9b4d6786d900321f6999829"}}' -Authentication Bearer -Token $token
 ```
 
 </TabItem>
@@ -296,86 +355,101 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
       "__typename": "LoyaltyCampaign",
       "campaignRewardType": "POINTS",
       "collectible": null,
-      "description": "Grab your next favorite game! Buy one of these select games from PlayStation store.",
+      "description": "Games we’ve been enjoying and think you will too. Buy any one of these carefully curated picks for a point boost!",
       "displayPoints": "50",
-      "endDate": "2022-10-31T15:59:00.000000Z",
+      "endDate": "2023-12-01T03:59:00.000000Z",
       "estimatedTime": null,
-      "id": "162f269d-1ed9-5647-a015-30cf1b76a766",
+      "id": "b5c96532-2544-5c66-ad78-fa45662577b0",
       "images": [
         {
           "__typename": "Media",
           "altText": null,
           "role": "IMAGE",
           "type": "IMAGE",
-          "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_1474_1662756973941.jpg"
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_2495_1697496785037.png"
         }
       ],
+      "isNew": false,
+      "isRegistrable": true,
       "isRegistrationRequired": true,
-      "name": "PlayStation Store Picks",
-      "productId": "HP0700-PPSA05164_00-SDGUNBATTLEA0000",
+      "name": "November Monthly Picks",
+      "productId": "EP3643-PPSA06417_00-0308301971493556",
       "progress": 0,
-      "startDate": "2022-09-12T16:00:00.000000Z",
-      "status": "NOT_REGISTERED",
+      "remainingTime": 287269,
+      "startDate": "2023-11-01T04:00:00.000000Z",
+      "status": "REGISTERED",
       "tasks": [
         {
           "__typename": "LoyaltyCampaignTask",
-          "description": "SD Gundam Battle Alliance",
-          "id": "201f4c56-3ac5-506e-bed9-2792bf585e95",
+          "conceptId": "10004448",
+          "description": "Wizard With a Gun",
+          "id": "7b64edc5-4e6c-5c36-b34e-ee1b38456297",
           "isLocked": false,
           "name": null,
           "productId": null,
-          "progress": null,
-          "status": "NOT_REGISTERED"
+          "progress": 0,
+          "status": "NOT_STARTED",
+          "type": "CONCEPT"
         },
         {
           "__typename": "LoyaltyCampaignTask",
-          "description": "JoJo's Bizarre Adventure",
-          "id": "b4f10a4b-0a03-54d0-996d-8c99984dafa6",
+          "conceptId": "229969",
+          "description": "Mineko's Night Market",
+          "id": "ab4d0be5-4510-5fa0-a3e0-1b6f9077ef43",
           "isLocked": false,
           "name": null,
           "productId": null,
-          "progress": null,
-          "status": "NOT_REGISTERED"
+          "progress": 0,
+          "status": "NOT_STARTED",
+          "type": "CONCEPT"
         },
         {
           "__typename": "LoyaltyCampaignTask",
-          "description": "Alice Gear Aegis CS",
-          "id": "d84ed4e1-ef07-5e57-bc21-973f14200ad7",
+          "conceptId": "10002162",
+          "description": "ENDLESS™ Dungeon",
+          "id": "14c4e057-5996-594e-a194-a6d3fa87431e",
           "isLocked": false,
           "name": null,
           "productId": null,
-          "progress": null,
-          "status": "NOT_REGISTERED"
+          "progress": 0,
+          "status": "NOT_STARTED",
+          "type": "CONCEPT"
         },
         {
           "__typename": "LoyaltyCampaignTask",
-          "description": "The Last of Us Part 1",
-          "id": "f4571452-2736-5c25-81a0-978f9f93044b",
+          "conceptId": "10007607",
+          "description": "Metal Gear Solid Master Collection Vol.1",
+          "id": "d410ba3a-172f-51a3-96a4-8b7fee4a5a7c",
           "isLocked": false,
           "name": null,
           "productId": null,
-          "progress": null,
-          "status": "NOT_REGISTERED"
+          "progress": 0,
+          "status": "NOT_STARTED",
+          "type": "CONCEPT"
         },
         {
           "__typename": "LoyaltyCampaignTask",
-          "description": "Inscryption",
-          "id": "55a21f65-b8c2-5e8c-9f2c-e89a43a55cfb",
+          "conceptId": "10004658",
+          "description": "Sonic Superstars",
+          "id": "cda0f1a4-bb40-52b5-b248-5888626883f4",
           "isLocked": false,
           "name": null,
           "productId": null,
-          "progress": null,
-          "status": "NOT_REGISTERED"
+          "progress": 0,
+          "status": "NOT_STARTED",
+          "type": "CONCEPT"
         },
         {
           "__typename": "LoyaltyCampaignTask",
-          "description": "Soul Hackers 2",
-          "id": "46b43907-f766-5340-baee-253686145ef1",
+          "conceptId": "10004721",
+          "description": "Sword Art Online Last Recollection",
+          "id": "126971c1-e9f9-5120-9011-0bffc75511f6",
           "isLocked": false,
           "name": null,
           "productId": null,
-          "progress": null,
-          "status": "NOT_REGISTERED"
+          "progress": 0,
+          "status": "NOT_STARTED",
+          "type": "CONCEPT"
         }
       ]
     }
@@ -392,7 +466,7 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
 
 _See [using a Web Browser to query the API](../query-api#web-browser)_
 
-    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables=%7B%22campaignId%22%3A%2223fc3a5d-34bf-509c-b381-7b40bd8611f3%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320%22%7D%7D
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables=%7B%22campaignId%22%3A%22a337bf45-dcdd-5914-992e-adc076e1dce9%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22068f75eb174b7e9ee31530797f4df6c881219fdbc9b4d6786d900321f6999829%22%7D%7D
 
 </TabItem>
 
@@ -400,7 +474,7 @@ _See [using a Web Browser to query the API](../query-api#web-browser)_
 
 _See [using a Web Browser to query the API](../query-api#web-browser)_
 
-    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"23fc3a5d-34bf-509c-b381-7b40bd8611f3"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"a337bf45-dcdd-5914-992e-adc076e1dce9"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"068f75eb174b7e9ee31530797f4df6c881219fdbc9b4d6786d900321f6999829"}}
 
 </TabItem>
 
@@ -409,7 +483,7 @@ _See [using a Web Browser to query the API](../query-api#web-browser)_
 _See [using PowerShell to query the API](../query-api#powershell-7)_
 
 ```powershell
-Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"23fc3a5d-34bf-509c-b381-7b40bd8611f3"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}' -Authentication Bearer -Token $token
+Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"a337bf45-dcdd-5914-992e-adc076e1dce9"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"068f75eb174b7e9ee31530797f4df6c881219fdbc9b4d6786d900321f6999829"}}' -Authentication Bearer -Token $token
 ```
 
 </TabItem>
@@ -432,228 +506,69 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
             "altText": null,
             "role": "IMAGE",
             "type": "IMAGE",
-            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_428_1663345652984.png"
+            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_462_1673644072785.png"
           },
           {
             "__typename": "Media",
             "altText": null,
             "role": "VIDEO",
             "type": "VIDEO",
-            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_428_1663345660772.mp4"
+            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_462_1673644081637.mp4"
           }
         ],
-        "id": "88d25cfa-26ad-572a-9335-a32b9bcabe13",
-        "name": "PlayStation Tech Demo Tyrannosaurus Rex ",
-        "rarityType": "UNCOMMON"
+        "id": "ecf86d0a-0139-5952-8af0-7a5ad7fd0f5a",
+        "name": "PlayStation Home",
+        "rarityType": "HEROIC"
       },
-      "description": "Happy October! Always good to see you.",
+      "description": "The online social gaming space that was so ahead of its time. And you were there!",
       "displayPoints": "",
-      "endDate": "2022-10-31T15:59:00.000000Z",
+      "endDate": "2025-07-07T03:59:00.000000Z",
       "estimatedTime": null,
-      "id": "23fc3a5d-34bf-509c-b381-7b40bd8611f3",
+      "id": "a337bf45-dcdd-5914-992e-adc076e1dce9",
       "images": [
         {
           "__typename": "Media",
           "altText": null,
           "role": "IMAGE",
           "type": "IMAGE",
-          "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_1372_1663708610342.png"
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_1638_1669231896266.png"
         },
         {
           "__typename": "Media",
           "altText": null,
           "role": "TILE",
           "type": "IMAGE",
-          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_428_1663345652984.png"
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_462_1673644072785.png"
         },
         {
           "__typename": "Media",
           "altText": null,
           "role": "TILE",
           "type": "IMAGE",
-          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_428_1663345660772.mp4"
+          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_462_1673644081637.mp4"
         }
       ],
+      "isNew": false,
+      "isRegistrable": true,
       "isRegistrationRequired": false,
-      "name": "October Check-in",
+      "name": "PlayStation & You: PlayStation Home",
       "productId": null,
       "progress": 100,
-      "startDate": "2022-09-30T16:00:00.000000Z",
+      "remainingTime": 50744542,
+      "startDate": "2023-07-06T04:00:00.000000Z",
       "status": "COMPLETED",
       "tasks": [
         {
           "__typename": "LoyaltyCampaignTask",
-          "description": "Play any game (PS4/PS5).",
-          "id": "e4da3be6-c521-5130-b976-4034dea9a212",
+          "conceptId": null,
+          "description": "Pick a PS4 or PS5 game to play.",
+          "id": "40da31cd-7248-5d2b-8e32-5094f53bedef",
           "isLocked": false,
           "name": null,
           "productId": null,
           "progress": 100,
-          "status": "COMPLETED"
-        }
-      ]
-    }
-  }
-}
-```
-
-</details>
-
-### Example 4 - Retrieve an in-progress campaign for the authenticating account
-
-<Tabs>
-<TabItem value="example4-encoded-url" label="Encoded URL">
-
-_See [using a Web Browser to query the API](../query-api#web-browser)_
-
-    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables=%7B%22campaignId%22%3A%220191e016-79a8-5cc5-bae6-70c74f441be3%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320%22%7D%7D
-
-</TabItem>
-
-<TabItem value="example4-raw-url" label="Raw URL">
-
-_See [using a Web Browser to query the API](../query-api#web-browser)_
-
-    https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"0191e016-79a8-5cc5-bae6-70c74f441be3"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}
-
-</TabItem>
-
-<TabItem value="example4-raw-pwsh" label="PowerShell">
-
-_See [using PowerShell to query the API](../query-api#powershell-7)_
-
-```powershell
-Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metLoyaltyCampaignByIdRetrieve&variables={"campaignId":"0191e016-79a8-5cc5-bae6-70c74f441be3"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"468175b4b9b099b530678e17aabcab4cedd478b09195bc95d5755e69d3173320"}}' -Authentication Bearer -Token $token
-```
-
-</TabItem>
-
-</Tabs>
-
-<details><summary>Click to view full JSON response</summary>
-
-```json
-{
-  "data": {
-    "loyaltyCampaignByIdRetrieve": {
-      "__typename": "LoyaltyCampaign",
-      "campaignRewardType": "COLLECTIBLE",
-      "collectible": {
-        "__typename": "LoyaltyCampaignCollectible",
-        "assets": [
-          {
-            "__typename": "Media",
-            "altText": null,
-            "role": "IMAGE",
-            "type": "IMAGE",
-            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_405_1665525133249.png"
-          },
-          {
-            "__typename": "Media",
-            "altText": null,
-            "role": "VIDEO",
-            "type": "VIDEO",
-            "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_405_1662004216217.mp4"
-          }
-        ],
-        "id": "59abc4e2-f96a-5b9e-a93d-c3c3bcdb4c19",
-        "name": "Sony Chord Machine",
-        "rarityType": "HEROIC"
-      },
-      "description": "Launch the game that matches a popular hit from circa 1994",
-      "displayPoints": "",
-      "endDate": "2022-11-15T22:59:00Z",
-      "estimatedTime": null,
-      "id": "0191e016-79a8-5cc5-bae6-70c74f441be3",
-      "images": [
-        {
-          "__typename": "Media",
-          "altText": null,
-          "role": "IMAGE",
-          "type": "IMAGE",
-          "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_1521_1663012650519.jpg"
-        },
-        {
-          "__typename": "Media",
-          "altText": null,
-          "role": "TILE",
-          "type": "IMAGE",
-          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_405_1665525133249.png"
-        },
-        {
-          "__typename": "Media",
-          "altText": null,
-          "role": "TILE",
-          "type": "IMAGE",
-          "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_405_1662004216217.mp4"
-        }
-      ],
-      "isRegistrationRequired": false,
-      "name": "Press play: 1994",
-      "productId": null,
-      "progress": 83,
-      "startDate": "2022-10-04T23:00:00Z",
-      "status": "IN_PROGRESS",
-      "tasks": [
-        {
-          "__typename": "LoyaltyCampaignTask",
-          "description": "Stay x Circle of Life",
-          "id": "6e122317-2d63-524e-9964-a0391d3aa106",
-          "isLocked": false,
-          "name": null,
-          "productId": null,
-          "progress": 0,
-          "status": "NOT_STARTED"
-        },
-        {
-          "__typename": "LoyaltyCampaignTask",
-          "description": "Baby I Love Your Way x Go West",
-          "id": "05bbfa40-06ba-5d22-beef-1cf5c282adcb",
-          "isLocked": false,
-          "name": null,
-          "productId": null,
-          "progress": 100,
-          "status": "COMPLETED"
-        },
-        {
-          "__typename": "LoyaltyCampaignTask",
-          "description": "Mr. Jones x Regulate",
-          "id": "fce8790c-f5c1-56cd-9b1e-fcfb4ce8fc4e",
-          "isLocked": false,
-          "name": null,
-          "productId": null,
-          "progress": 100,
-          "status": "COMPLETED"
-        },
-        {
-          "__typename": "LoyaltyCampaignTask",
-          "description": "More Human Than Human",
-          "id": "6a8cb238-1e54-5991-9029-e7820aa9110b",
-          "isLocked": false,
-          "name": null,
-          "productId": null,
-          "progress": 100,
-          "status": "COMPLETED"
-        },
-        {
-          "__typename": "LoyaltyCampaignTask",
-          "description": "Wild Night",
-          "id": "32c7cd9b-b0bd-55d7-89aa-a3e82dcb9d8d",
-          "isLocked": false,
-          "name": null,
-          "productId": null,
-          "progress": 100,
-          "status": "COMPLETED"
-        },
-        {
-          "__typename": "LoyaltyCampaignTask",
-          "description": "Streets of Philadelphia",
-          "id": "c0c68178-5866-58d3-bc09-07fd92528823",
-          "isLocked": false,
-          "name": null,
-          "productId": null,
-          "progress": 100,
-          "status": "COMPLETED"
+          "status": "COMPLETED",
+          "type": null
         }
       ]
     }

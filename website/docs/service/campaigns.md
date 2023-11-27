@@ -17,8 +17,6 @@ Campaigns are challenges which users can complete to earn rewards.
 
 Use the [campaign detail](./campaign-detail.md) endpoint to retrieve additional information about a specific campaign including the tasks required to complete it.
 
-Campaigns which involve playing specific games are region locked. The version of the game being played must be from the same region as that of the account completing the campaign (ie. if you bought games with a US account but played them with an EU account then these games would not count towards progress on the EU accounts campaigns).
-
 The endpoint can query the authenticating account only.
 
     https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetCampaignGroup
@@ -59,13 +57,19 @@ If you query with an account which has not enrolled with PlayStation Stars then 
 
 :::
 
+### Additional Information
+
+The campaigns are typically issued under a unique id for each major PSN region. When the service first launched a consequence of this was that campagins were effectively region locked; for example a campaign requiring the user to play a specific game would only track the version of game that belonged to that region. So if you bought the game using a US PSN account but played it using an EU PSN account then the version of the campaign that was issued to the EU PSN account would only track the EU versions of a game, and so the campaign would not complete when the US region version of the game was played. Other consequences of this approach was that occasionally they would track the wrong version of the game for a region, or only track the PS4 version of a game and not the PS5 version.
+
+The service has mostly mitigated these issues as campaigns can now track a Concept Id. The Concept Id is a unique identifier assigned to every game released on PlayStation. They encompass all regional versions and variants of a game under a single identifier. In the context of PlayStation Stars this now means that when a campaign requires you to play a particular game it should be possible to play any version of that game and have it register progress to complete the task, effectively elimating the region locking. A side effect of this is that _any_ version of a game can be used to complete such campaigns - including any demo or beta/pre-release versions.
+
 ## Input Parameters
 
 | Parameter | Value |
 | --- | --- |
 | operationName | metGetCampaignGroup |
 | variables | `{}` |
-| extensions | `{"persistedQuery":{"version":1,"sha256Hash":"eabc9a2d92e6c8604eb611c22bbc0f8ffce673dee29b0c1f82040f5a4918264b"}}` |
+| extensions | `{"persistedQuery":{"version":1,"sha256Hash":"88fd82cc7cb8c0f5b29548f34b9b2aced1f028fe7a18ad0133c6170af5b6d37b"}}` |
 
 
 ## Output JSON Response
@@ -97,9 +101,12 @@ A JSON response is returned. The following are returned under the `data` attribu
 | endDate | Date (UTC) | `2022-10-31T15:59:00.000000Z` | Date the campaign ends
 | id | String | `162f269d-1ed9-5647-a015-30cf1b76a766` | GUID for the campaign
 | images | [JSON object<br/>`Media`](#m-json-object-Media-campaign) | | Media associated with the campaign (images, video)
+| isNew | Boolean | `true` | `true` until user interacts with the campaign
+| isRegistrable | Boolean | `true` | `true` if user is eligible for the campaign
 | name | String | `PlayStation Store Picks` | Name of the campaign
 | productId | String | `null`<br/>`HP0700-PPSA05164_00-SDGUNBATTLEA0000` | PlayStation Store Product Id associated with the campaign<br/>`null` if not associated with a store product
 | progress | Numeric | `0`<br/>`100` | Users progress towards completing the campaign
+| remainingTime | Numeric | `0`<br/>`2678340` | Seconds until the campaign ends
 | startDate | Date (UTC) | `2022-09-12T16:00:00.000000Z` | Date the campaign begins
 | status | String | `NOT_REGISTERED`<br/>`AUTO_REGISTERED`<br/>`REGISTERED`<br/>`IN_PROGRESS`<br/>`EXPIRED` | Users status for the campaign
 
@@ -121,7 +128,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 | assets | [JSON object<br/>`Media`](#m-json-object-Media-collectible) | | Media associated with the collectible (images, video)
 | id | String | `4a9d9d67-e29f-598c-bb57-b6689456aa8c` | GUID for the collectible
 | name | String | `Novelty Toy Fight Trophy` | Name of the collectible
-| rarityType | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`HEROIC`<br/>`LEGENDARY` | Rarity of the collectible
+| rarityType | String | `COMMON`<br/>`UNCOMMON`<br/>`RARE`<br/>`HEROIC`<br/>`LEGENDARY`<br/>`MYTHIC` | Rarity of the collectible
 
 ### Media (Collectible) JSON object {#m-json-object-Media-collectible}
 
@@ -143,7 +150,7 @@ A JSON response is returned. The following are returned under the `data` attribu
 
 _See [using a Web Browser to query the API](../query-api#web-browser)_
 
-    https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetCampaignGroup&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22eabc9a2d92e6c8604eb611c22bbc0f8ffce673dee29b0c1f82040f5a4918264b%22%7D%7D
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetCampaignGroup&variables=%7B%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2288fd82cc7cb8c0f5b29548f34b9b2aced1f028fe7a18ad0133c6170af5b6d37b%22%7D%7D
 
 </TabItem>
 
@@ -151,7 +158,7 @@ _See [using a Web Browser to query the API](../query-api#web-browser)_
 
 _See [using a Web Browser to query the API](../query-api#web-browser)_
 
-    https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetCampaignGroup&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"eabc9a2d92e6c8604eb611c22bbc0f8ffce673dee29b0c1f82040f5a4918264b"}}
+    https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetCampaignGroup&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"88fd82cc7cb8c0f5b29548f34b9b2aced1f028fe7a18ad0133c6170af5b6d37b"}}
 
 </TabItem>
 
@@ -160,7 +167,7 @@ _See [using a Web Browser to query the API](../query-api#web-browser)_
 _See [using PowerShell to query the API](../query-api#powershell-7)_
 
 ```powershell
-Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetCampaignGroup&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"eabc9a2d92e6c8604eb611c22bbc0f8ffce673dee29b0c1f82040f5a4918264b"}}' -Authentication Bearer -Token $token
+Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetCampaignGroup&variables={}&extensions={"persistedQuery":{"version":1,"sha256Hash":"88fd82cc7cb8c0f5b29548f34b9b2aced1f028fe7a18ad0133c6170af5b6d37b"}}' -Authentication Bearer -Token $token
 ```
 
 </TabItem>
@@ -178,25 +185,75 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
         "campaigns": [
           {
             "__typename": "LoyaltyCampaign",
-            "campaignRewardType": "POINTS",
-            "collectible": null,
-            "description": "Grab your next favorite game! Buy one of these select games from PlayStation store.",
-            "displayPoints": "50",
-            "endDate": "2022-10-31T15:59:00.000000Z",
-            "id": "162f269d-1ed9-5647-a015-30cf1b76a766",
+            "campaignRewardType": "COLLECTIBLE",
+            "collectible": {
+              "__typename": "LoyaltyCampaignCollectible",
+              "assets": [
+                {
+                  "__typename": "Media",
+                  "altText": null,
+                  "role": "IMAGE",
+                  "type": "IMAGE",
+                  "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_687_1698711685423.png"
+                },
+                {
+                  "__typename": "Media",
+                  "altText": null,
+                  "role": "VIDEO",
+                  "type": "VIDEO",
+                  "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_687_1698711696679.mp4"
+                }
+              ],
+              "id": "90c66449-9c4d-5eeb-a07a-254b2a1d1ec0",
+              "name": "November’s Robbit",
+              "rarityType": "UNCOMMON"
+            },
+            "description": "Crunchy leaves, a crisp breeze, harvest festivals… it’s autumn in the northern hemisphere! Celebrate the changing of seasons with us by playing some games.",
+            "displayPoints": "",
+            "endDate": "2023-12-01T03:59:00.000000Z",
+            "id": "a8faa377-f08b-5d1d-a27c-68cc32930105",
             "images": [
               {
                 "__typename": "Media",
                 "altText": null,
                 "role": "IMAGE",
                 "type": "IMAGE",
-                "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_1474_1662756973941.jpg"
+                "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_2494_1697482637592.png"
               }
             ],
-            "name": "PlayStation Store Picks",
-            "productId": "HP0700-PPSA05164_00-SDGUNBATTLEA0000",
+            "isNew": true,
+            "isRegistrable": true,
+            "name": "November Check-In",
+            "productId": null,
             "progress": 0,
-            "startDate": "2022-09-12T16:00:00.000000Z",
+            "remainingTime": 292334,
+            "startDate": "2023-11-01T04:00:00.000000Z",
+            "status": "AUTO_REGISTERED"
+          },
+          {
+            "__typename": "LoyaltyCampaign",
+            "campaignRewardType": "POINTS",
+            "collectible": null,
+            "description": "Games we’ve been enjoying and think you will too. Buy any one of these carefully curated picks for a point boost!",
+            "displayPoints": "50",
+            "endDate": "2023-12-01T03:59:00.000000Z",
+            "id": "b5c96532-2544-5c66-ad78-fa45662577b0",
+            "images": [
+              {
+                "__typename": "Media",
+                "altText": null,
+                "role": "IMAGE",
+                "type": "IMAGE",
+                "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_2495_1697496785037.png"
+              }
+            ],
+            "isNew": true,
+            "isRegistrable": true,
+            "name": "November Monthly Picks",
+            "productId": "EP3643-PPSA06417_00-0308301971493556",
+            "progress": 0,
+            "remainingTime": 292334,
+            "startDate": "2023-11-01T04:00:00.000000Z",
             "status": "NOT_REGISTERED"
           },
           {
@@ -210,52 +267,41 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
                   "altText": null,
                   "role": "IMAGE",
                   "type": "IMAGE",
-                  "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_406_1664306813863.png"
+                  "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_688_1697660228280.png"
                 },
                 {
                   "__typename": "Media",
                   "altText": null,
                   "role": "VIDEO",
                   "type": "VIDEO",
-                  "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_406_1662591783851.mp4"
+                  "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_688_1697660232921.mp4"
                 }
               ],
-              "id": "4a9d9d67-e29f-598c-bb57-b6689456aa8c",
-              "name": "Novelty Toy Fight Trophy",
-              "rarityType": "UNCOMMON"
+              "id": "35c3e099-f9d0-56c4-8e91-3c17c5b2e407",
+              "name": "PlayStation 4 Console",
+              "rarityType": "HEROIC"
             },
-            "description": "Pick a fight to honor 30 years of Hadoukens.",
+            "description": "PlayStation 4 marked a new era of incredible first party games, social features, and robust services for us. Thanks for being there with us – from your friends at PlayStation.",
             "displayPoints": "",
-            "endDate": "2022-10-31T15:59:00.000000Z",
-            "id": "23c6b95b-9892-507c-b4b7-c888aacaf9aa",
+            "endDate": "2025-11-16T03:59:00.000000Z",
+            "id": "e9546664-aa7f-50b7-ab52-c70eda2e403d",
             "images": [
               {
                 "__typename": "Media",
                 "altText": null,
                 "role": "IMAGE",
                 "type": "IMAGE",
-                "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_1570_1663780701598.png"
-              },
-              {
-                "__typename": "Media",
-                "altText": null,
-                "role": "TILE",
-                "type": "IMAGE",
-                "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_406_1664306813863.png"
-              },
-              {
-                "__typename": "Media",
-                "altText": null,
-                "role": "TILE",
-                "type": "IMAGE",
-                "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_406_1662591783851.mp4"
+                "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_2496_1697483283774.png"
               }
             ],
-            "name": "The World Warrior’s Challenge",
+            "isNew": false,
+            "isRegistrable": true,
+            "name": "PlayStation & You: PS4",
             "productId": null,
             "progress": 0,
-            "startDate": "2022-09-12T18:00:00.000000Z",
-            "status": "AUTO_REGISTERED"
+            "remainingTime": 62151680,
+            "startDate": "2023-11-15T06:13:00.000000Z",
+            "status": "REGISTERED"
           },
           {
             "__typename": "LoyaltyCampaign",
@@ -268,52 +314,41 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
                   "altText": null,
                   "role": "IMAGE",
                   "type": "IMAGE",
-                  "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_428_1663345652984.png"
+                  "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_462_1673644072785.png"
                 },
                 {
                   "__typename": "Media",
                   "altText": null,
                   "role": "VIDEO",
                   "type": "VIDEO",
-                  "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_428_1663345660772.mp4"
+                  "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_462_1673644081637.mp4"
                 }
               ],
-              "id": "88d25cfa-26ad-572a-9335-a32b9bcabe13",
-              "name": "PlayStation Tech Demo Tyrannosaurus Rex ",
-              "rarityType": "UNCOMMON"
+              "id": "ecf86d0a-0139-5952-8af0-7a5ad7fd0f5a",
+              "name": "PlayStation Home",
+              "rarityType": "HEROIC"
             },
-            "description": "Happy October! Always good to see you.",
+            "description": "The online social gaming space that was so ahead of its time. And you were there!",
             "displayPoints": "",
-            "endDate": "2022-10-31T15:59:00.000000Z",
-            "id": "23fc3a5d-34bf-509c-b381-7b40bd8611f3",
+            "endDate": "2025-07-07T03:59:00.000000Z",
+            "id": "a337bf45-dcdd-5914-992e-adc076e1dce9",
             "images": [
               {
                 "__typename": "Media",
                 "altText": null,
                 "role": "IMAGE",
                 "type": "IMAGE",
-                "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_1372_1663708610342.png"
-              },
-              {
-                "__typename": "Media",
-                "altText": null,
-                "role": "TILE",
-                "type": "IMAGE",
-                "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_428_1663345652984.png"
-              },
-              {
-                "__typename": "Media",
-                "altText": null,
-                "role": "TILE",
-                "type": "IMAGE",
-                "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_428_1663345660772.mp4"
+                "url": "https://sky-assets.api.playstation.com/sky/p1-np/campaign/image/masterImage_image/jpeg,image/png,image/gif_1638_1669231896266.png"
               }
             ],
-            "name": "October Check-in",
+            "isNew": false,
+            "isRegistrable": true,
+            "name": "PlayStation & You: PlayStation Home",
             "productId": null,
-            "progress": 0,
-            "startDate": "2022-09-30T16:00:00.000000Z",
-            "status": "AUTO_REGISTERED"
+            "progress": 100,
+            "remainingTime": 50746880,
+            "startDate": "2023-07-06T04:00:00.000000Z",
+            "status": "COMPLETED"
           }
         ],
         "id": "Default",
