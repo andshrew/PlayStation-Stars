@@ -242,3 +242,169 @@ Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operation
 ```
 
 </details>
+
+<details><summary>Click to view full JSON response as at 1st January 2024</summary>
+
+:::info
+The response was initially including both the 2023 collectibles and the 2024 collectibles.
+:::
+
+```json
+{
+  "data": {
+    "loyaltyStatusLevelsMetaDataRetrieve": [
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "fb00fbd7-0eaa-5253-b566-8b0ec28f8f79",
+            "name": "Level 5 Diorama - Bots Don't Breathe"
+          },
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "788ad72d-aa06-5d1b-bd5e-c52f13ca0040",
+            "name": "Level 5: Star Sailor"
+          }
+        ],
+        "description": "Invite only to Diamond Level",
+        "name": "Diamond",
+        "statusLevelNumber": 5
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "0c34562e-e289-519b-b852-7b143707cb9b",
+            "name": "Level 3 Diorama - A Robot Runs Through It"
+          },
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "4884174b-6ce6-5f7a-b53b-11801190d73e",
+            "name": "Level 3: Star Seeker"
+          }
+        ],
+        "description": "Earn 32 trophies & 2 purchase to earn Emerald",
+        "name": "Emerald",
+        "statusLevelNumber": 3
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "0664970a-d215-5688-8995-6d55c503c0db",
+            "name": "Level 4 Diorama - Space Settlers"
+          },
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "c2df99f2-72da-5b4a-834d-87f285c6182c",
+            "name": "Level 4: Star Explorer"
+          }
+        ],
+        "description": "Earn 128 trophies & 4 purchase to earn Ruby",
+        "name": "Ruby",
+        "statusLevelNumber": 4
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [],
+        "description": "Sapphire Level after on-boarding to Sky Program",
+        "name": "Sapphire",
+        "statusLevelNumber": 1
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "9cb866dc-a469-54cc-b7e6-21d0035f680b",
+            "name": "Level 2 Diorama - The Astro Walk"
+          },
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "b6e51cc1-d3ae-58b7-834a-d011d97c6c12",
+            "name": "Level 2: Star Finder"
+          }
+        ],
+        "description": "Earn 1 trophy & 1 purchase to earn Garnet",
+        "name": "Garnet",
+        "statusLevelNumber": 2
+      }
+    ]
+  }
+}
+```
+</details>
+
+<details><summary>Click to view full JSON response as at early January 2024</summary>
+
+```json
+{
+  "data": {
+      "loyaltyStatusLevelsMetaDataRetrieve": [
+          {
+              "__typename": "LoyaltyStatusLevelMetaData",
+              "collectibles": [
+                  {
+                      "__typename": "LoyaltyStatusCollectible",
+                      "id": "788ad72d-aa06-5d1b-bd5e-c52f13ca0040",
+                      "name": "Level 5: Star Sailor"
+                  }
+              ],
+              "description": "Invite only to Diamond Level",
+              "name": "Diamond",
+              "statusLevelNumber": 5
+          },
+          {
+              "__typename": "LoyaltyStatusLevelMetaData",
+              "collectibles": [
+                  {
+                      "__typename": "LoyaltyStatusCollectible",
+                      "id": "4884174b-6ce6-5f7a-b53b-11801190d73e",
+                      "name": "Level 3: Star Seeker"
+                  }
+              ],
+              "description": "Earn 32 trophies & 2 purchase to earn Emerald",
+              "name": "Emerald",
+              "statusLevelNumber": 3
+          },
+          {
+              "__typename": "LoyaltyStatusLevelMetaData",
+              "collectibles": [
+                  {
+                      "__typename": "LoyaltyStatusCollectible",
+                      "id": "c2df99f2-72da-5b4a-834d-87f285c6182c",
+                      "name": "Level 4: Star Explorer"
+                  }
+              ],
+              "description": "Earn 128 trophies & 4 purchase to earn Ruby",
+              "name": "Ruby",
+              "statusLevelNumber": 4
+          },
+          {
+              "__typename": "LoyaltyStatusLevelMetaData",
+              "collectibles": [],
+              "description": "Sapphire Level after on-boarding to Sky Program",
+              "name": "Sapphire",
+              "statusLevelNumber": 1
+          },
+          {
+              "__typename": "LoyaltyStatusLevelMetaData",
+              "collectibles": [
+                  {
+                      "__typename": "LoyaltyStatusCollectible",
+                      "id": "b6e51cc1-d3ae-58b7-834a-d011d97c6c12",
+                      "name": "Level 2: Star Finder"
+                  }
+              ],
+              "description": "Earn 1 trophy & 1 purchase to earn Garnet",
+              "name": "Garnet",
+              "statusLevelNumber": 2
+          }
+      ]
+  }
+}
+```
+</details>
