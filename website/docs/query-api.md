@@ -84,6 +84,15 @@ function Get-AuthenticationToken {
 2. In your web browser access https://store.playstation.com and log in with a PSN account.
 3. In the same browser access https://ca.account.sony.com/api/v1/ssocookie<br/>You should see a response with `npsso` followed by a string of letters and numbers. Highlight and copy this.
 ![ssocookie example](img/2021-03-20-15-33-08.png)
+
+:::danger Understanding the npsso token
+**Never share your npsso token with anyone**. This code acts as authorisation to Sony's servers to enable access to information relating to your PlayStation Network account. In addition to permitting access to view information such as your PlayStation Stars membership, your trophies and your purchase and entitlement history, it may also enable personal information disclosure (ie. your real name, your date of birth). In short, if the information is visible in the PlayStation App, then it is accessible via this code. It may also, in certain circumstances, aid a sophisticated attacker in compromising your account.
+
+**Should you ever accidentally share this code**, you can attempt to invalidate it by using the option to sign out of all devices.
+
+Access and log in to the PlayStation Store web site, click your profile picture followed by Account Settings. A new page will load, under the Account section click Security. On the Security page, scroll to the bottom and click `Sign Out of All Devices`.
+:::
+
 4. In the PowerShell session run the following command, substituting in your npsso token copied in the previous step
 ```powershell
 $token = Get-AuthenticationToken -npsso "Hwl9Vq%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
