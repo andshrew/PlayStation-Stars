@@ -1,0 +1,7 @@
+{
+  "label": "Archive",
+  "className": "hiddenFromSidebar",
+  "link": {
+    "description": "Archived service endpoints."
+  }
+}
