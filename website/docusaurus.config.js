@@ -122,10 +122,18 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/andshrew',
               },
+              {
+                label: 'PS1HD PlayStation Emulator',
+                href: 'https://ps1hd.pages.dev/',
+              },
+              {
+                label: 'PS3 HDD Adventures',
+                href: 'https://ps3hdd.pages.dev',
+              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.<br>This website is not affiliated with Sony Interactive Entertainment Inc.`,
       },
       prism: {
         theme: lightCodeTheme,
