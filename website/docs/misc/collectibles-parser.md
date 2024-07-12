@@ -2,6 +2,7 @@
 title: Collectibles Parser
 description: Parse the User Earned Collectibles endpoint response
 slug: /collectibles-parser
+sidebar_position: 1
 pagination_next: null
 pagination_prev: null
 ---
