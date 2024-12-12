@@ -4314,5 +4314,1773 @@
         "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_685_1695679915325.mp4"
       }
     ]
+  },
+  {
+    "id": "12463f1f-426b-5587-bd2d-dc50b15a9ef0",
+    "name": "30 Years of Insomniac Games                         ",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-11-05T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thank you for 30 incredible years, Insomniac Games!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_900_1729542602172.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_900_1729542606118.mp4"
+      }
+    ]
+  },
+  {
+    "id": "42c6b006-2e97-5c22-b9b4-5c7250d0a684",
+    "name": "30th Anniversary | Memories of PlayStation",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-12-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Making, saving, and sharing memories since 1994."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_908_1732557554734.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_908_1732557565488.mp4"
+      }
+    ]
+  },
+  {
+    "id": "8500d497-80e0-5c9b-8bbd-a6f1f752d6d2",
+    "name": "30th Anniversary | Memories of PlayStation 2",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-12-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Making, saving, and sharing memories since 2000."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_909_1732558599072.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_909_1732558606907.mp4"
+      }
+    ]
+  },
+  {
+    "id": "fd8acb09-0d6a-5ade-9ea2-5f62f00d4c0c",
+    "name": "30th Anniversary | Memories of PlayStation 4",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-12-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Making, saving, and sharing memories since 2013."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_911_1732562054904.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_911_1732562062794.mp4"
+      }
+    ]
+  },
+  {
+    "id": "497b8fa7-b555-5754-b07c-f7051ba47429",
+    "name": "30th Anniversary | Memories of PlayStation 5",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-12-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Making, saving, and sharing memories since 2020."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_912_1732570610269.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_912_1732643695332.mp4"
+      }
+    ]
+  },
+  {
+    "id": "18be93d6-47ff-5e3b-a0fd-14e4411da6d3",
+    "name": "30th Anniversary | Memories of PlayStation Portable & PlayStation Vita",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-12-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Making, saving, and sharing memories since 2004 and 2011, respectively."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_910_1732643432020.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_910_1732560470541.mp4"
+      }
+    ]
+  },
+  {
+    "id": "b4548908-478d-54ca-86c5-f9e505494cbf",
+    "name": "A Dark and Dusty Tome",
+    "rarity": "RARE",
+    "releaseDate": "2024-02-08T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Your narrative adventures have only just begun…"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_771_1706209224811.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_771_1706209235855.mp4"
+      }
+    ]
+  },
+  {
+    "id": "5e614a98-364d-5b4f-a666-8b2fb4b7c6a9",
+    "name": "A Light to Accompany the Darkness",
+    "rarity": "RARE",
+    "releaseDate": "2024-06-04T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Eido scoured the solar system looking for intel on the origins of the Witness to aid Guardians in their fight. During her travels, she found a gift to honor your service: a Digital Collectible for joining the fight. It matches the physical edition Destiny 2: The Final Shape Collector’s Edition available on the Bungie Store, which includes a Tower Architectural Replica with LED lights, sounds, hidden messages, Vanguard figurines, dossier, patch, autograph book, emblem, and original soundtrack."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_815_1716337388181.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_815_1716337393972.mp4"
+      }
+    ]
+  },
+  {
+    "id": "8b705366-ff81-537f-a146-b4f30f8bc201",
+    "name": "A Nod to Jim Ryan",
+    "rarity": "UNCOMMON",
+    "releaseDate": "2024-03-24T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thanks for 30 years of hard work and great games, Jim."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_787_1709749356199.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_787_1709749360838.mp4"
+      }
+    ]
+  },
+  {
+    "id": "57c92cfc-1a1e-55af-96a6-c5d735dc7f0e",
+    "name": "A Shimmering Distance",
+    "rarity": "RARE",
+    "releaseDate": "2024-11-14T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Even impossible journeys start with a single step."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_899_1729718055941.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_899_1729718059357.mp4"
+      }
+    ]
+  },
+  {
+    "id": "b668337e-564e-5a4f-84c7-ce78d07a01d0",
+    "name": "A Well-Worn Favorite",
+    "rarity": "RARE",
+    "releaseDate": "2024-05-09T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Immerse yourself in a richly detailed world…"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_806_1713555861624.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_806_1713555888659.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f2d2b509-4c4b-572f-bc48-d0f11da20116",
+    "name": "Ancient Babylon Robbit",
+    "rarity": "COMMON",
+    "releaseDate": "2024-03-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! Did you stop by the Hanging Gardens?"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_781_1707935550835.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_781_1707935560075.mp4"
+      }
+    ]
+  },
+  {
+    "id": "34381c8f-7473-51bd-87fe-cd1da9fde58d",
+    "name": "Ancient Egypt Robbit",
+    "rarity": "COMMON",
+    "releaseDate": "2024-05-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! Please hop out of there before you’re swallowed by the sands of time (and the desert)!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_803_1713290355262.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_803_1713290364532.mp4"
+      }
+    ]
+  },
+  {
+    "id": "5316a7b3-ab1d-5082-bf89-ee7e248d7763",
+    "name": "Ancient India Robbit",
+    "rarity": "COMMON",
+    "releaseDate": "2024-04-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! What a beautiful elephant friend you’ve made!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_797_1709831847945.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_797_1709831860418.mp4"
+      }
+    ]
+  },
+  {
+    "id": "408554a8-50c1-588e-850c-63fc8ffc247a",
+    "name": "Ancient Mayan Robbit",
+    "rarity": "COMMON",
+    "releaseDate": "2024-07-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! You’ve got mad hops!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_840_1718215317960.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_840_1718215332771.mp4"
+      }
+    ]
+  },
+  {
+    "id": "47b5a04b-134a-599e-aa2f-3d8467cf97df",
+    "name": "Buster Sword",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-02-28T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "A large broadsword that has inherited the hopes of those who fight."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_776_1706722872535.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_776_1706909386718.mp4"
+      }
+    ]
+  },
+  {
+    "id": "7a0c8fe7-95b0-5d68-830f-de099813c4fa",
+    "name": "Card II: The Rebel",
+    "rarity": "RARE",
+    "releaseDate": "2024-03-07T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "What do we have here? The Rebel. You were born for dissent. Question the powerful, fight those who would oppress the weak, and defend your convictions until the very end."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_784_1707937505511.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_784_1707937513112.mp4"
+      }
+    ]
+  },
+  {
+    "id": "a0b905db-38a3-509d-98b9-eda07c175f95",
+    "name": "Card III: The Outlaw",
+    "rarity": "RARE",
+    "releaseDate": "2024-05-02T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Hmm, The Outlaw? This card doesn’t necessarily signal lawlessness and blatant disregard for order. It suggests a steadfast drive and motivation to achieve one’s goals regardless of barriers – legal, systemic, societal. The Outlaw will find a way over, around, or through obstacles at any cost."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_805_1713292249617.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_805_1713292256298.mp4"
+      }
+    ]
+  },
+  {
+    "id": "c491bbb9-3a6f-530c-85cf-5c2ce8965fe6",
+    "name": "Card IV: Shadow",
+    "rarity": "RARE",
+    "releaseDate": "2024-07-19T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Ah, looks like we’ve pulled the Shadow card. The darkness on display can be literal, meaning you live and work between the light to achieve your goals. It can also be figurative, demonstrating a willingness to embrace questionable methods in pursuit of victory. Either way…tread carefully…"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_842_1718909021293.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_842_1718909025519.mp4"
+      }
+    ]
+  },
+  {
+    "id": "5c53b6de-1540-5565-8076-d2cece580732",
+    "name": "Card V: Resilience",
+    "rarity": "RARE",
+    "releaseDate": "2024-09-05T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "The world can be a harsh home. Misfortune batters you like ceaseless waves, eroding your patience and fragile peace. But Resilience endures and so do you. You’ve survived darkness, betrayal, pain, and you are sure to face more. Yet here you stand, face forward, eyes clear, finding hope among the ruins."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_866_1723676189170.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_866_1723676194961.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f97024ce-149f-5eab-98fa-85cc155b4f3f",
+    "name": "Card VI: Queen of Stars",
+    "rarity": "RARE",
+    "releaseDate": "2024-11-07T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Ah, the Queen of Stars evokes beauty, power, and grace. She is the embodiment of harmony in a universe that sprang from chaos. Her aid is invaluable yet elusive. Count yourself fortunate for having her celestial gaze cast upon you."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_898_1729709113996.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_898_1729709118128.mp4"
+      }
+    ]
+  },
+  {
+    "id": "29e813cc-322f-51a4-a2ed-53e3d1c7cdc4",
+    "name": "Community Challenge | Days of Play 2024",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-05-24T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "To commemorate your contribution to the Days of Play community challenge! Along with your fellow players, you blew past the goal we set and made this year one to remember. Thanks!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_822_1716323234716.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_822_1716323244327.mp4"
+      }
+    ]
+  },
+  {
+    "id": "debdfe81-80d3-5d02-b243-6f60a95b84be",
+    "name": "Days of Play 2024",
+    "rarity": "UNCOMMON",
+    "releaseDate": "2024-05-29T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "You might say every day is a day of play, but these aren’t just any old days of play. These are THE Days of Play."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_826_1716323854498.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_826_1716323863033.mp4"
+      }
+    ]
+  },
+  {
+    "id": "b5c5602e-26dd-53b8-a509-6e52ff8e311d",
+    "name": "EA SPORTS™ Blue / White Retro Ball",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-06-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thank you for participating in the PlayStation Tournaments: Days of Play Cup!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_827_1716324165482.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_827_1716324172960.mp4"
+      }
+    ]
+  },
+  {
+    "id": "c9012425-620c-5a41-b4e3-945237c51674",
+    "name": "Far Cry 5 Boomer Digital Collectible",
+    "rarity": "RARE",
+    "releaseDate": "2024-03-19T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Boomer is one of the many Fangs-For-Hire that accompany you on your journey in Far Cry 5 – and the very best good boy.\n\nHe accompanies you as you navigate the open-world Hope County, Montana, and tags enemies nearby to help you in epic first-person shooter fights as you work to defeat the cult of Joseph Seed."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_788_1707937622429.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_788_1707937635243.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f8e681ae-5d26-5aa9-b070-14b616c7df08",
+    "name": "Far Cry 6 Chorizo Digital Collectible",
+    "rarity": "RARE",
+    "releaseDate": "2024-03-24T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Chorizo is one of the many Amigos that accompany you on your journey in Far Cry 6 – and the cutest of them all!\n\nChorizo fights by your side as you discover the open world of Yara and join a modern-day guerrilla movement. He distracts enemies as you take them down in explosive first-person action sequences."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_789_1707937647945.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_789_1707937657434.mp4"
+      }
+    ]
+  },
+  {
+    "id": "a6ade23b-54cd-5c25-a0a3-9d640323b625",
+    "name": "Festival of Play Party Favor",
+    "rarity": "UNCOMMON",
+    "releaseDate": "2023-02-15T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thanks for joining our Festival of Play and celebrating all things PS Plus with us!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_508_1676075824492.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_508_1676075863837.mp4"
+      }
+    ]
+  },
+  {
+    "id": "7fe0373f-545e-5427-8e92-b584f9879bf9",
+    "name": "Free To Play Festival 2024",
+    "rarity": "RARE",
+    "releaseDate": "2024-07-17T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thanks for joining us for Free To Play Festival 2024!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_862_1721171765320.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_862_1721171758842.mp4"
+      }
+    ]
+  },
+  {
+    "id": "1c2ee694-2c9d-5b3e-8471-05294f482ecf",
+    "name": "Gluttonous Yumkasaur Mountain King",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-09-19T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "A powerful Yumkasaur that has survived both the ravages of time and countless battles, surviving until the present day. This \"Mountain King,\" who once joined forces with the great heroes against the Black Tide, holds a special place in the hearts of the Scions of the Canopy. Some tribe members believe that it has its current body shape because it has a unique physique, like the Qucusaurus \"Tyrant\"... Though in fact, this is simply because it's lived for so long, and eaten way, WAY too much."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_884_1726524647882.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_884_1726524654803.mp4"
+      }
+    ]
+  },
+  {
+    "id": "7b60e52d-492e-5716-a0d3-7e0ab658785f",
+    "name": "Groovy Lava Rocket",
+    "rarity": "RARE",
+    "releaseDate": "2024-06-19T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Your setup just got cozier."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_814_1716328699489.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_814_1716328704018.mp4"
+      }
+    ]
+  },
+  {
+    "id": "76a32e2a-24bf-5ef4-96e4-4f4cd53f4aa6",
+    "name": "Happy Anniversary!",
+    "rarity": "RARE",
+    "releaseDate": "2023-12-20T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "It’s your PlayStation Network anniversary! We got you this adorable collectible as thanks. Here’s to many more adventures to come!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_717_1703095069755.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_717_1703095084622.mp4"
+      }
+    ]
+  },
+  {
+    "id": "5de520a7-8d03-5c42-ad73-e0edea381e1f",
+    "name": "Industrial Era London Robbit",
+    "rarity": "COMMON",
+    "releaseDate": "2024-09-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! Please don’t get stuck in those narrow chimneys!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_863_1723483134225.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_863_1723483188705.mp4"
+      }
+    ]
+  },
+  {
+    "id": "d7c9ee92-c89d-503f-88e0-9113a15f8c8b",
+    "name": "Koholasaur Whelp",
+    "rarity": "RARE",
+    "releaseDate": "2024-09-26T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "A young Koholasaurus with the ability to swim through water and liquid phlogiston. Their skin and flippers are still soft and tender, to the point that they can't even tolerate hot environments for long periods like adults. However, one day, they will grow into the form that can swim freely through the water."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_869_1724358329304.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_869_1724358343965.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f1289f37-6cab-58f3-b355-d4ab81cc0bb1",
+    "name": "Magnificent Monstera",
+    "rarity": "RARE",
+    "releaseDate": "2024-11-20T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Your setup just got cozier."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_897_1729701285771.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_897_1729701292403.mp4"
+      }
+    ]
+  },
+  {
+    "id": "a42cfd02-d75e-52b8-9919-377e9866c9cb",
+    "name": "Marvel’s Spider-Man 2 | Symbiote Canister",
+    "rarity": "LEGENDARY",
+    "releaseDate": "2024-03-07T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Property of Oscorp."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_761_1708466398852.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_761_1708466407861.mp4"
+      }
+    ]
+  },
+  {
+    "id": "d4fed96c-f255-5a65-a410-f79c7df95cff",
+    "name": "Medieval China Robbit",
+    "rarity": "COMMON",
+    "releaseDate": "2024-06-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! Grab a pear from one of the many palace gardens before you hop on out of there!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_811_1716243945377.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_811_1716243965606.mp4"
+      }
+    ]
+  },
+  {
+    "id": "0cac58b1-939c-5515-a5d8-7526abfafbab",
+    "name": "Mini-Puft Mischief",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-06-28T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "The Mini-Pufts are quite the mischievous little scamps… how can you not love them?"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_812_1716244389661.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_812_1716244396752.mp4"
+      }
+    ]
+  },
+  {
+    "id": "07375dbc-42ab-59c7-a8f8-1a1f4660bd26",
+    "name": "Music, Power, Games",
+    "rarity": "RARE",
+    "releaseDate": "2024-09-19T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Rise and Grind Mix ’24."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_865_1723656642441.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_865_1723656663146.mp4"
+      }
+    ]
+  },
+  {
+    "id": "e6ee432b-1f29-502d-8832-72fcd885f47c",
+    "name": "PlayStation 3 Console",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-07-15T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "... Ok, maybe it can."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_591_1688142108641.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_591_1688142108659.mp4"
+      }
+    ]
+  },
+  {
+    "id": "8c11348f-61b3-5127-a15f-f77cc3c67684",
+    "name": "PlayStation 4 Console",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-05-15T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Feel the power of Pro."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_809_1713216779778.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_809_1713216785742.mp4"
+      }
+    ]
+  },
+  {
+    "id": "41ecf2bd-3239-5610-8e50-48ca474a59f7",
+    "name": "PlayStation Portal Remote Player™",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-12-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "The power of PlayStation in the palm of your hand."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_721_1699295538687.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_721_1699295544131.mp4"
+      }
+    ]
+  },
+  {
+    "id": "5ebbb3e9-cdb7-5743-a979-05ebee4db1b1",
+    "name": "PlayStation Wrap-Up 2024 | 30th Anniversary Playlist",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-12-10T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thanks for checking out your 2024 PlayStation Wrap-Up!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_915_1733177753622.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_915_1733177766906.mp4"
+      }
+    ]
+  },
+  {
+    "id": "7750ee73-e3fe-567b-a75e-6d7b329f8d9b",
+    "name": "Polygon Man",
+    "rarity": "LEGENDARY",
+    "releaseDate": "2024-12-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "How can a pawn hope to challenge a king?"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_914_1732645651872.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_914_1732645659680.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f0d145ef-3680-5d7f-9cdd-d94c24dc8a64",
+    "name": "Polygon Man Variant",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-12-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "I AM SUPREME!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_913_1732641732520.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_913_1732641736606.mp4"
+      }
+    ]
+  },
+  {
+    "id": "94e93a5c-ff35-51ed-b043-7908545cb9a6",
+    "name": "Retro Lunch Box | First Edition",
+    "rarity": "RARE",
+    "releaseDate": "2024-01-04T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "What’s in the box?"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_737_1702319196162.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_737_1702319205280.mp4"
+      }
+    ]
+  },
+  {
+    "id": "578de1dc-0d0b-5c1f-8641-90142943d49c",
+    "name": "Retro Lunch Box | Second Edition",
+    "rarity": "RARE",
+    "releaseDate": "2024-07-19T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "No, seriously… What’s in the box?"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_738_1719260771347.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_738_1719260776533.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f6d55e1e-9ed7-53f4-b18d-1fae4ce0f897",
+    "name": "Road to Evo 2024 Trophy",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-05-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thanks for kicking off the Road to Evo 2024 with us!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_807_1713545289579.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_807_1713545308044.mp4"
+      }
+    ]
+  },
+  {
+    "id": "acf32ec2-313e-57b2-8d7e-42e21bc38352",
+    "name": "Roaring Twenties Robbit",
+    "rarity": "COMMON",
+    "releaseDate": "2024-11-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! Pump those getaway sticks and dance the night away!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_896_1729622114104.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_896_1729622117202.mp4"
+      }
+    ]
+  },
+  {
+    "id": "1b8c3c5a-e6e1-5d69-9e11-734ef823b2b1",
+    "name": "Role Player",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-12-12T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thank you for joining us on this trip down memory lane. 2023 was an incredible year in gaming, and your PlayStation Wrap-Up gave us a glimpse into your journey through a year filled with iconic games and unforgettable memories."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_748_1701800816283.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_748_1701800823132.mp4"
+      }
+    ]
+  },
+  {
+    "id": "7fbc98a2-e4f8-503c-be57-1d7caaff9a61",
+    "name": "SILENT HILL 2 | Pyramid Head",
+    "rarity": "RARE",
+    "releaseDate": "2024-10-08T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Even among the ranks of horror game icons, Pyramid Head asserts an overwhelming sense of presence. This monster obstructs and menaces James during his journey in Silent Hill."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_887_1727717831421.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_887_1727717834862.mp4"
+      }
+    ]
+  },
+  {
+    "id": "7414358a-e465-5f0f-9d76-0666164bcb5d",
+    "name": "SOA",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-02-06T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Soa is a ‘Stylish Idol’ who has mastered the art of acrobatically controlling bubbles."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_778_1706035350542.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_778_1706035357431.mp4"
+      }
+    ]
+  },
+  {
+    "id": "10968274-1a36-5154-88b6-0bcd9ee840fe",
+    "name": "Second Love",
+    "rarity": "RARE",
+    "releaseDate": "2024-06-20T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Only the best Japanese tracks."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_802_1715278858845.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_802_1715278870509.mp4"
+      }
+    ]
+  },
+  {
+    "id": "846b475b-29d8-5f67-9953-6e8278d3f634",
+    "name": "Sengoku Kyoto Robbit",
+    "rarity": "COMMON",
+    "releaseDate": "2024-08-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! We hope you learned much from the samurai!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_854_1721241614610.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_854_1721241623569.mp4"
+      }
+    ]
+  },
+  {
+    "id": "4af9cc81-9880-57f9-b2cc-a7b507751e6a",
+    "name": "Sly Cooper’s Hat and Cane",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-12-10T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Tools of the trade for an iconic master thief."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_916_1733174130646.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_916_1733174146792.mp4"
+      }
+    ]
+  },
+  {
+    "id": "cf243a7f-14fb-558b-a7bc-6fc49b1b754a",
+    "name": "Synaptic Feedback III",
+    "rarity": "RARE",
+    "releaseDate": "2024-07-19T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Hey, look at you, matching things and being all smart and stuff."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_843_1721062514455.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_843_1721062520603.mp4"
+      }
+    ]
+  },
+  {
+    "id": "4dfad7eb-2569-56e3-8a73-d485f92272c5",
+    "name": "Synaptic Feedback IV",
+    "rarity": "RARE",
+    "releaseDate": "2024-10-17T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Hey, look at you, mastering word puzzles and being all well-read and stuff."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_883_1727213510481.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_883_1727213515241.mp4"
+      }
+    ]
+  },
+  {
+    "id": "e9ef7a65-bb60-58a4-9844-efc3eeaf3f05",
+    "name": "Tepetlisaur Whelp",
+    "rarity": "RARE",
+    "releaseDate": "2024-08-28T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "A young Tepetlisaurus with the ability to tunnel between rocks and solid phlogiston. They have not yet formed the horns on their forehead, and their digging skills are still developing as well. It is even common to hear about young Tepetlisaurs getting trapped by rocks while practicing their digging. However, one day, they will grow into a form that may travel freely through even the toughest of soils."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_867_1724358181691.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_867_1724358188194.mp4"
+      }
+    ]
+  },
+  {
+    "id": "e0126d10-40e0-5889-bc6d-a75bf57034d4",
+    "name": "The Game Award",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-11-18T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Created by Weta Workshop, The Game Award is a stunning piece of metallic art which depicts an angel rising to the heavens from digital building blocks."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_895_1731969286590.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_895_1731969293250.mp4"
+      }
+    ]
+  },
+  {
+    "id": "a9a4dd69-4f84-5d07-8f84-3daae6e5ac88",
+    "name": "The Last of Us Part I | Clicker",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-09-26T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Click. Click. Click."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_885_1726769521528.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_885_1726769524960.mp4"
+      }
+    ]
+  },
+  {
+    "id": "ef6f37d5-cdd2-5dc4-8e11-29a596119fcb",
+    "name": "The Vault | Issue 3",
+    "rarity": "RARE",
+    "releaseDate": "2024-03-28T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Don’t worry, you can’t loan this Digital Collectible to a friend who will never return it."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_783_1707935791867.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_783_1707935797195.mp4"
+      }
+    ]
+  },
+  {
+    "id": "342ddd82-17c4-5f2f-8b74-5f98b8c65878",
+    "name": "The Vault | Issue 4",
+    "rarity": "RARE",
+    "releaseDate": "2024-07-17T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Luckily for us, digital demos can’t be scratched or accidentally kicked under our beds to be lost forever."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_844_1719421515604.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_844_1719421521265.mp4"
+      }
+    ]
+  },
+  {
+    "id": "c676bb2a-17c2-5488-a732-40357a4038c5",
+    "name": "The Vault | Issue 5",
+    "rarity": "RARE",
+    "releaseDate": "2024-09-26T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "You’re Underground now. There’s no going back. We’re serious this time. Don’t even try it."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_870_1724359648206.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_870_1724359653484.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f29dfe3b-cfd0-5745-a358-cb017115e865",
+    "name": "To Whimsical Worlds",
+    "rarity": "RARE",
+    "releaseDate": "2024-08-08T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Standing out sometimes just means you benefit from more time in the light…"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_856_1721336037687.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_856_1721336055836.mp4"
+      }
+    ]
+  },
+  {
+    "id": "3bbb2165-8f79-5e38-b49e-fc484ada85e6",
+    "name": "We Are Venom",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-10-25T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Here's your chance to bond with everyone's favorite symbiote."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_894_1729542774874.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_894_1729542782429.mp4"
+      }
+    ]
+  },
+  {
+    "id": "eddea349-f2f6-58d9-a24d-08893c1a6dd2",
+    "name": "Wild West Robbit",
+    "rarity": "COMMON",
+    "releaseDate": "2024-10-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, mon Dieu! It’s time to yee, haw, and uphold the law."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_881_1726677784422.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_881_1726677788204.mp4"
+      }
+    ]
+  },
+  {
+    "id": "3e6a09e6-8e5f-5040-a7cb-a2da9119d57d",
+    "name": "Wireless Keyboard",
+    "rarity": "HEROIC",
+    "releaseDate": "2023-09-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Click, clack, we got your back."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_645_1692981978470.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_645_1692981986143.mp4"
+      }
+    ]
+  },
+  {
+    "id": "0c99bc00-9fdd-5fbd-90eb-60520088c2dc",
+    "name": "Yumkasaur Whelp",
+    "rarity": "RARE",
+    "releaseDate": "2024-09-12T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "A young Yumkasaurus with the ability to spit Flamegranate pectin hidden in their cheek pouches out, wrapping around distant objects. Their hold on pectin-coated objects isn't strong enough, nor is their sense of balance good enough to allow them to move freely through the air. Sometimes, they'll even fall over to one side just sitting on their tails. However, one day, they will grow into the form that can swing freely between the trees without a care."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_868_1724358256427.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_868_1724358260874.mp4"
+      }
+    ]
+  },
+  {
+    "id": "a6fd6ea4-61f1-5663-afaa-503349d9e1fc",
+    "name": "adidas Ultra 4D Mid Evolved",
+    "rarity": "LEGENDARY",
+    "releaseDate": "2023-11-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "These adidas shoes are designed in collaboration with Marvel, with a striking color palette inspired by Miles Morales's suit. Each pair is individually numbered, so if you're lucky enough to secure a pair, rest assured they're one of a kind. The mid-cut upper feels soft and comfortable, and the 4D latticed midsole transforms impact forces into forward motion to take you effortlessly from one place to another. The reflective print on the toecap is a nod to Miles’s Evolved Venom Super Power."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_709_1697658401258.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_709_1697648107652.mp4"
+      }
+    ]
   }
 ]
