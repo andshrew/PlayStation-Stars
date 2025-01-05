@@ -6217,7 +6217,7 @@
     "id": "1db9e221-dca9-55cf-ba13-c84b1932247e",
     "name": "Level 5: And Beyond",
     "rarity": "LEGENDARY",
-    "releaseDate": null,
+    "releaseDate": "2025-01-01T00:00:00Z",
     "description": [
       {
         "type": "LEGAL",
@@ -6243,7 +6243,7 @@
     "id": "adfa4371-f694-5c97-aff1-0f11cff08e8d",
     "name": "Level 4: To Infinity",
     "rarity": "HEROIC",
-    "releaseDate": null,
+    "releaseDate": "2025-01-01T00:00:00Z",
     "description": [
       {
         "type": "LEGAL",
@@ -6269,7 +6269,7 @@
     "id": "9684f6a8-bc23-55d4-b896-48f3cfff6e4d",
     "name": "Level 2: To the Moon",
     "rarity": "UNCOMMON",
-    "releaseDate": null,
+    "releaseDate": "2025-01-01T00:00:00Z",
     "description": [
       {
         "type": "LEGAL",
@@ -6295,7 +6295,7 @@
     "id": "f4c9fc8d-72a9-51ae-9a68-1520b522b5a7",
     "name": "Level 3: Beyond the Kuiper Belt",
     "rarity": "RARE",
-    "releaseDate": null,
+    "releaseDate": "2025-01-01T00:00:00Z",
     "description": [
       {
         "type": "LEGAL",
