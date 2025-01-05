@@ -408,3 +408,74 @@ The response was initially including both the 2023 collectibles and the 2024 col
 }
 ```
 </details>
+
+<details><summary>Click to view full JSON response as at 1st January 2025</summary>
+
+```json
+{
+  "data": {
+    "loyaltyStatusLevelsMetaDataRetrieve": [
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [],
+        "description": "Sapphire Level after on-boarding to Sky Program",
+        "name": "Sapphire",
+        "statusLevelNumber": 1
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "1db9e221-dca9-55cf-ba13-c84b1932247e",
+            "name": "Level 5: And Beyond"
+          }
+        ],
+        "description": "Invite only",
+        "name": "Diamond",
+        "statusLevelNumber": 5
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "adfa4371-f694-5c97-aff1-0f11cff08e8d",
+            "name": "Level 4: To Infinity"
+          }
+        ],
+        "description": "Earn 128 trophies & 4 purchase to earn Ruby",
+        "name": "Ruby",
+        "statusLevelNumber": 4
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "9684f6a8-bc23-55d4-b896-48f3cfff6e4d",
+            "name": "Level 2: To the Moon"
+          }
+        ],
+        "description": "Earn 1 trophies & 1 purchase to earn Garnet",
+        "name": "Garnet",
+        "statusLevelNumber": 2
+      },
+      {
+        "__typename": "LoyaltyStatusLevelMetaData",
+        "collectibles": [
+          {
+            "__typename": "LoyaltyStatusCollectible",
+            "id": "f4c9fc8d-72a9-51ae-9a68-1520b522b5a7",
+            "name": "Level 3: Beyond the Kuiper Belt"
+          }
+        ],
+        "description": "Earn 32 trophies & 2 purchase to earn Emerald",
+        "name": "Emerald",
+        "statusLevelNumber": 3
+      }
+    ]
+  }
+}
+```
+</details>
