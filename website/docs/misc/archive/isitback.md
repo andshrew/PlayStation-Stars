@@ -1,4 +1,5 @@
 ---
+sidebar_class_name: hiddenFromSidebar
 title: Is PlayStation Stars Back?
 description: Check which countries have had the service restored
 slug: /is-it-back
@@ -7,6 +8,12 @@ pagination_prev: null
 ---
 
 import IsStarsBack from '@site/src/components/isitback.js';
+
+:::info
+
+The PlayStation Stars service was fully restored on 12th July 2024. If you are still unable to access the service make sure that you have the latest version of the PS App installed.
+
+:::
 
 Following the outage during June 2024, PlayStation Stars is coming back online under a phased regional rollout.  
 
