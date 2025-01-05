@@ -6082,5 +6082,759 @@
         "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_709_1697648107652.mp4"
       }
     ]
+  },
+  {
+    "id": "893451e2-6d3b-5c8d-812b-48b7069109e7",
+    "name": "The Rook Tarot card",
+    "rarity": "RARE",
+    "releaseDate": "2024-12-04T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Unite the Veilguard with this premium Collectible card."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_917_1733164805199.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_917_1733164818602.mp4"
+      }
+    ]
+  },
+  {
+    "id": "7dac38ec-965b-5d79-b830-fa11c246df26",
+    "name": "Quidditch Goalposts",
+    "rarity": "RARE",
+    "releaseDate": "2024-11-08T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "These familiar hoops stand at each end of a Quidditch pitch, defended by keen-eye Keepers."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_901_1729874720724.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_901_1729874725089.mp4"
+      }
+    ]
+  },
+  {
+    "id": "75f13374-fce8-591b-803a-f100450756d9",
+    "name": "Card VII: Pillar",
+    "rarity": "RARE",
+    "releaseDate": "2025-01-02T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "So, we’ve drawn the Pillar card, hm? The Pillar carries the weight of the world on their strong shoulders, fending off pain and strife to maintain some semblance of hope for their people. This struggle leads to great fortitude, but at a cost. You can protect and support those you love, but be sure to take care of yourself, for what would become of them without their Pillar?"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_929_1734041134548.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_929_1734041142543.mp4"
+      }
+    ]
+  },
+  {
+    "id": "19fdc6c0-09f6-5523-b01c-89a9a7842cf5",
+    "name": "The Full Veilguard Deck",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-12-04T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Unite the Veilguard and defy the gods with a full Companion hand."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_918_1733248333040.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_918_1733248346669.mp4"
+      }
+    ]
+  },
+  {
+    "id": "0b86dbdf-eacb-5077-a3a0-c1d0230592cd",
+    "name": "A Little Piece of January 2025",
+    "rarity": "COMMON",
+    "releaseDate": "2025-01-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thanks for checking in! May your January be filled with great games and exciting adventures."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_926_1733347985966.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_926_1733348098749.mp4"
+      }
+    ]
+  },
+  {
+    "id": "1db9e221-dca9-55cf-ba13-c84b1932247e",
+    "name": "Level 5: And Beyond",
+    "rarity": "LEGENDARY",
+    "releaseDate": null,
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "What do you see at the end of everything?"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_936_1733872142949.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_936_1733872149900.mp4"
+      }
+    ]
+  },
+  {
+    "id": "adfa4371-f694-5c97-aff1-0f11cff08e8d",
+    "name": "Level 4: To Infinity",
+    "rarity": "HEROIC",
+    "releaseDate": null,
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Look deeper, dreamer."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_935_1733872083016.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_935_1733872095578.mp4"
+      }
+    ]
+  },
+  {
+    "id": "9684f6a8-bc23-55d4-b896-48f3cfff6e4d",
+    "name": "Level 2: To the Moon",
+    "rarity": "UNCOMMON",
+    "releaseDate": null,
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "With eyes to the stars, you wonder…"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_933_1733872003610.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_933_1733872010058.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f4c9fc8d-72a9-51ae-9a68-1520b522b5a7",
+    "name": "Level 3: Beyond the Kuiper Belt",
+    "rarity": "RARE",
+    "releaseDate": null,
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Sometimes you just want to gaze deeper."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_934_1733872045204.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_934_1733872053818.mp4"
+      }
+    ]
+  },
+  {
+    "id": "065212bb-7929-5173-8c2b-0bf0aa3a885f",
+    "name": " A Flip of the Virtual Coin",
+    "rarity": "RARE",
+    "releaseDate": "2024-06-06T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Make your own luck in any reality."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_823_1716323579435.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_823_1716323589308.mp4"
+      }
+    ]
+  },
+  {
+    "id": "b0409a19-5eac-5763-8ef7-43615951f8fd",
+    "name": "Botanical Buddy",
+    "rarity": "RARE",
+    "releaseDate": "2024-03-20T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Making your display case cozier with every collectible."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_782_1707935590703.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_782_1707935597341.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f4b90743-c68f-5253-b857-465989cd01de",
+    "name": "Coin of the Classics",
+    "rarity": "RARE",
+    "releaseDate": "2024-08-02T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Heads, you play a pixels game. Tails, you play a polygons game."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_816_1716311852592.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_816_1716311863589.mp4"
+      }
+    ]
+  },
+  {
+    "id": "5578e44d-3c3f-5d54-80b3-115666c8f0e4",
+    "name": "Dancing in the Sunlight",
+    "rarity": "RARE",
+    "releaseDate": "2024-12-12T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Watch out, I’m dancing here."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_907_1733334878677.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_907_1733334953459.mp4"
+      }
+    ]
+  },
+  {
+    "id": "0e145ae2-e8b5-577e-9c86-e07f2308c429",
+    "name": "Fishy Feline Bed",
+    "rarity": "RARE",
+    "releaseDate": "2024-09-18T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Your setup just got cozier."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_864_1723582466913.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_864_1723582475144.mp4"
+      }
+    ]
+  },
+  {
+    "id": "f437f93a-c0f2-5c90-ade2-376a4492092e",
+    "name": "Fishy Friends",
+    "rarity": "RARE",
+    "releaseDate": "2024-12-18T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Your setup just got cozier."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_905_1733250574779.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_905_1733250589404.mp4"
+      }
+    ]
+  },
+  {
+    "id": "a054233c-95bb-51e7-be1c-ab3ccfa3437a",
+    "name": "Flower Power Throw Pillows",
+    "rarity": "RARE",
+    "releaseDate": "2024-08-21T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Your setup just got cozier."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_855_1721402229026.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_855_1721402248541.mp4"
+      }
+    ]
+  },
+  {
+    "id": "a105a191-580c-5e1b-83b0-0db263ea9966",
+    "name": "Futuristic Robbit",
+    "rarity": "COMMON",
+    "releaseDate": "2024-12-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Robbit, adieu! Thank you for sharing your travels with us. Have a safe trip and we hope to see you again soon!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_904_1732556348747.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_904_1732556360380.mp4"
+      }
+    ]
+  },
+  {
+    "id": "14c7a508-5b43-5e7f-9a0c-f38295dba5f6",
+    "name": "Fuzzy Sheep Ottoman",
+    "rarity": "RARE",
+    "releaseDate": "2024-05-15T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Your setup just got cozier."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_804_1713290866519.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_804_1713290874088.mp4"
+      }
+    ]
+  },
+  {
+    "id": "aec76e45-bcb3-5969-a0f9-2cc6704af9c5",
+    "name": "Happy Birthday!",
+    "rarity": "RARE",
+    "releaseDate": "2023-12-20T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "From all of us at PlayStation."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_415_1664335878156.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_415_1662004848273.mp4"
+      }
+    ]
+  },
+  {
+    "id": "63370083-bc81-50fd-8426-fa06d365afcb",
+    "name": "Leap Year, Sleep Year",
+    "rarity": "RARE",
+    "releaseDate": "2024-02-21T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Making your display case cozier with every collectible."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_770_1705418035579.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_770_1705418047463.mp4"
+      }
+    ]
+  },
+  {
+    "id": "4cf47580-7803-5240-ab62-224426b0332c",
+    "name": "MLB The Show 24 | Slugger",
+    "rarity": "RARE",
+    "releaseDate": "2024-03-15T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Time to bring the boom."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_786_1708466148783.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_786_1708466169483.mp4"
+      }
+    ]
+  },
+  {
+    "id": "46c90b84-96d2-5ebc-a5a6-1f9d7ac783ea",
+    "name": "Melancholy and the Finite Sadness",
+    "rarity": "RARE",
+    "releaseDate": "2024-03-21T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Hand me the aux. I think you’ll like this."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_785_1707937544764.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_785_1707937576047.mp4"
+      }
+    ]
+  },
+  {
+    "id": "52861fae-833a-504c-ac5e-6332dd1bc285",
+    "name": "PlayStation 4 Console",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-04-15T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Sleeker. Not weaker."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_800_1710192199371.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_800_1710192207926.mp4"
+      }
+    ]
+  },
+  {
+    "id": "2d69aca3-dd70-5865-a98d-0eda4f91083f",
+    "name": "PlayStation Wrap-Up 2024",
+    "rarity": "HEROIC",
+    "releaseDate": "2024-12-03T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thanks for looking back at another year of amazing games with us! Ready for more?"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_925_1733180916929.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_925_1733180963694.mp4"
+      }
+    ]
+  },
+  {
+    "id": "9e516246-f45f-56a0-a125-de9f87def809",
+    "name": "Sweet Dreams",
+    "rarity": "RARE",
+    "releaseDate": "2024-10-16T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Your setup just got cozier."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_882_1726695316620.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_882_1726695320619.mp4"
+      }
+    ]
+  },
+  {
+    "id": "daa48ae4-9a56-57a9-bc9c-fa716598c6f7",
+    "name": "Synaptic Feedback II",
+    "rarity": "RARE",
+    "releaseDate": "2024-04-18T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Hey, look at you, solving puzzles and being all adventurous and stuff."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_799_1711386089873.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_799_1711386095808.mp4"
+      }
+    ]
+  },
+  {
+    "id": "32ce1b6f-6892-55c4-8064-737f354c6bed",
+    "name": "The Northstar",
+    "rarity": "RARE",
+    "releaseDate": "2024-08-23T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "The Freegunners couldn’t ask for a better ship."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_858_1724418974846.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_858_1724418979302.mp4"
+      }
+    ]
+  },
+  {
+    "id": "66b02a63-e408-520a-b01f-f8217235e262",
+    "name": "The Vault | Issue 6",
+    "rarity": "RARE",
+    "releaseDate": "2024-12-26T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "We’ll never forget the feeling of popping in a new demo disc and playing games that hadn’t even been released yet."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_906_1733333735867.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_906_1733333816285.mp4"
+      }
+    ]
+  },
+  {
+    "id": "24061d49-bb80-5e15-9ef9-fb761c464cf2",
+    "name": "Trunked Dunker",
+    "rarity": "RARE",
+    "releaseDate": "2024-07-17T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Your setup just got cozier."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_841_1718386584896.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_841_1718386590633.mp4"
+      }
+    ]
   }
 ]
