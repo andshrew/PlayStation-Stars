@@ -7408,5 +7408,57 @@
         "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_749_1701801389106.mp4"
       }
     ]
+  },
+  {
+    "id": "9c9952eb-8081-5cea-965c-d37319a5b136",
+    "name": "A Little Piece of June 2025",
+    "rarity": "COMMON",
+    "releaseDate": "2025-06-01T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thanks for checking in! May your June be filled with great games and exciting adventures."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_971_1748378235196.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_971_1748378239809.mp4"
+      }
+    ]
+  },
+  {
+    "id": "fc1ed210-8ddd-57a8-bc9f-c11b910d5fae",
+    "name": "MLB The Show 25 Collectible Bat ",
+    "rarity": "RARE",
+    "releaseDate": "2025-03-18T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thank you for playing MLB The Show 25!"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_963_1740162593722.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_963_1740162598513.mp4"
+      }
+    ]
   }
 ]
