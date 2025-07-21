@@ -7460,5 +7460,57 @@
         "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_963_1740162598513.mp4"
       }
     ]
+  },
+  {
+    "id": "984703b2-fef5-590b-b6aa-3c003dcb3c70",
+    "name": "PlayStation Stars | The Final Collectible",
+    "rarity": "MYTHIC",
+    "releaseDate": "2025-07-16T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "Thank you for three years of silly jokes, fun collectibles, and a shared love of incredible games."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_973_1752685981833.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_973_1752685985386.mp4"
+      }
+    ]
+  },
+  {
+    "id": "2b9c532e-7674-57f9-9d63-06226a99e423",
+    "name": "The Vault | Issue 8",
+    "rarity": "RARE",
+    "releaseDate": "2025-06-12T00:00:00Z",
+    "description": [
+      {
+        "type": "LEGAL",
+        "value": null
+      },
+      {
+        "type": "LONG",
+        "value": "They say all good things must come to an end. We miss you, PlayStation Underground. Gone but definitely not forgotten."
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/image/masterImage_png_972_1748987270248.png"
+      },
+      {
+        "type": "VIDEO",
+        "url": "https://sky-assets.api.playstation.com/sky/p1-np/collectible/video/video_mp4_972_1748987284791.mp4"
+      }
+    ]
   }
 ]
