@@ -10,6 +10,19 @@ pagination_prev: null
 
 ## Web Browser
 
+:::caution This method now requires additional steps
+The API endpoints will no longer display directly in the browser because they require additional headers to be included in the request, which a normal browser request to the URL will not include.  
+
+You may be able to workaround this by using your browsers web developer tools, or an extension which allows you to modify the headers of specific requests. With the developers tools in Firefox you can make a request to your desired URL, access the network tab of the developers tools and then right-click the failed request - and select to edit and resend. Add the required headers and the response will be displayed within the developer tools.  
+
+```js
+headers: {
+            "apollographql-client-name": "my-playstation",
+            "content-type": "application/json",
+         }
+```
+:::
+
 PlayStation web services store their authentication token within a cookie in the browser, so once you have authenticated to one of the services such as the PlayStation Store you can then access any of the endpoint URLs documented here and your browser will automatically use the stored auth token. The API responds with a JSON object, so for a more friendly view you can use a web browser such as FireFox which includes a JSON parser.
 
 1. In your web browser access https://store.playstation.com and log in with a PSN account.
@@ -18,7 +31,7 @@ PlayStation web services store their authentication token within a cookie in the
 
 3. The JSON response will be displayed in the browser.
 ![browser example](img/2022-10-05-18-54-54.png)
-_Example with FireFox which automatically parses the JSON response_
+_Example with Firefox which automatically parses the JSON response_
 
 ## Powershell 7
 
@@ -31,7 +44,7 @@ Now make a request to one of the API URLs using `Invoke-RestMethod`. This will o
 An example to request the PlayStation Stars profile summary for the authenticating account and output the original JSON response to the screen. Additional examples are included within the documentation for each API endpoint.
 
 ```powershell
-Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetAccount&variables={"accountId":"me"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"743c32289cdd6fbdead3b34ea80b48d63f8ddab34581469c4dda4ea412e6cf6b"}}' -Authentication Bearer -Token $token | ConvertTo-Json -Depth 5
+Invoke-RestMethod -Uri 'https://m.np.playstation.com/api/graphql/v1/op?operationName=metGetAccount&variables={"accountId":"me"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"743c32289cdd6fbdead3b34ea80b48d63f8ddab34581469c4dda4ea412e6cf6b"}}' -Headers @{"apollographql-client-name"="PlayStationApp-Android";"content-type"="application/json"} -Authentication Bearer -Token $token | ConvertTo-Json -Depth 5
 ```
 
 ### Obtaining an Authentication Token
@@ -85,7 +98,7 @@ function Get-AuthenticationToken {
 3. In the same browser access https://ca.account.sony.com/api/v1/ssocookie<br/>You should see a response with `npsso` followed by a string of letters and numbers. Highlight and copy this.
 ![ssocookie example](img/2021-03-20-15-33-08.png)
 
-:::danger Understanding the npsso token
+:::caution Understanding the npsso token
 **Never share your npsso token with anyone**. This code acts as authorisation to Sony's servers to enable access to information relating to your PlayStation Network account. In addition to permitting access to view information such as your PlayStation Stars membership, your trophies and your purchase and entitlement history, it may also enable personal information disclosure (ie. your real name, your date of birth). In short, if the information is visible in the PlayStation App, then it is accessible via this code. It may also, in certain circumstances, aid a sophisticated attacker in compromising your account.
 
 **Should you ever accidentally share this code**, you can attempt to invalidate it by using the option to sign out of all devices.
