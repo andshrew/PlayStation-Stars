@@ -9,6 +9,12 @@ pagination_prev: null
 
 # PlayStation Stars API Documentation
 
+:::info PlayStation Stars Loyalty Program is ending
+In May 2025 Sony announced their intention to end the PlayStation Stars service. Starting 23rd July 2025 it will no longer be possible to earn collectible digital items, or reward points from purchases on the PlayStation Store.  
+
+The service is now in a minimal support phase, and will officially end on 2nd November 2026.  
+:::
+
 ## Summary
 
 PlayStation Stars is a customer loyalty reward service launched by Sony in late 2022. The service is free to join and enables members to earn rewards including collectible digital items, currency to spend on the PlayStation Store, and digital versions of PS4 and PS5 games.
